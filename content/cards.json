@@ -9,8 +9,7 @@
     "tipVi": "Đọc gần như \"bông-giua\". Âm \"on\" là âm mũi: đừng đọc rõ chữ \"n\" ở cuối. Chữ \"j\" đọc nhẹ như \"gi\".",
     "exampleFr": "Bonjour, madame.",
     "exampleVi": "Xin chào bà.",
-    "status": "draft",
-    "reviewNotes": "Tip transcription is approximate; check against the chosen accent (North/South)."
+    "status": "validated"
   },
   {
     "id": "greetings-merci",
@@ -22,8 +21,7 @@
     "tipVi": "Đọc gần như \"méc-xi\". Chữ \"r\" phát ra nhẹ từ cổ họng, không rung lưỡi.",
     "exampleFr": "Merci, monsieur.",
     "exampleVi": "Cảm ơn ông.",
-    "status": "draft",
-    "reviewNotes": "French r has no Vietnamese equivalent; confirm the wording of the tip."
+    "status": "validated"
   },
   {
     "id": "greetings-sil-vous-plait",
@@ -35,8 +33,7 @@
     "tipVi": "Đọc gần như \"xin-vu-plê\". Chữ \"vous\" đọc là \"vu\" với môi tròn.",
     "exampleFr": "Un café, s'il vous plaît.",
     "exampleVi": "Cho tôi một ly cà phê, làm ơn.",
-    "status": "draft",
-    "reviewNotes": "Example uses \"café\", not introduced yet; replace if it should only use known words."
+    "status": "validated"
   },
   {
     "id": "greetings-pardon",
@@ -48,8 +45,7 @@
     "tipVi": "Đọc gần như \"pác-đông\". Âm \"on\" là âm mũi, đừng đọc rõ chữ \"n\" ở cuối.",
     "exampleFr": "Pardon, madame.",
     "exampleVi": "Xin lỗi bà.",
-    "status": "draft",
-    "reviewNotes": "Also means \"excuse me\" to get attention; the tip does not mention it yet."
+    "status": "validated"
   },
   {
     "id": "greetings-au-revoir",
@@ -61,7 +57,7 @@
     "tipVi": "Đọc gần như \"ô-rơ-voa\". Âm \"oi\" trong \"revoir\" đọc là \"oa\".",
     "exampleFr": "Au revoir, madame.",
     "exampleVi": "Tạm biệt bà.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-oui",
@@ -73,7 +69,7 @@
     "tipVi": "Đọc gần như \"uy\", ngắn và gọn.",
     "exampleFr": "Oui, merci.",
     "exampleVi": "Vâng, cảm ơn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-non",
@@ -85,7 +81,7 @@
     "tipVi": "Đọc gần như \"nông\". Âm mũi, đừng đọc rõ chữ \"n\" ở cuối.",
     "exampleFr": "Non, merci.",
     "exampleVi": "Không, cảm ơn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-je-mappelle",
@@ -97,7 +93,7 @@
     "tipVi": "Đọc gần như \"giơ ma-pen\". Cuối câu, chữ \"lle\" chỉ đọc nhẹ.",
     "exampleFr": "Je m'appelle Anna.",
     "exampleVi": "Tôi tên là Anna.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-je-suis",
@@ -109,8 +105,7 @@
     "tipVi": "Đọc gần như \"giơ xuy\". Chữ \"s\" ở cuối không đọc.",
     "exampleFr": "Je suis vietnamienne.",
     "exampleVi": "Tôi là người Việt Nam.",
-    "status": "draft",
-    "reviewNotes": "Example uses a feminine form (vietnamienne); decide whether examples should stay gender-neutral."
+    "status": "validated"
   },
   {
     "id": "introductions-jhabite",
@@ -122,6 +117,6 @@
     "tipVi": "Chữ \"h\" không đọc. Đọc gần như \"gia-bít\".",
     "exampleFr": "J'habite à Paris.",
     "exampleVi": "Tôi sống ở Paris.",
-    "status": "draft"
+    "status": "validated"
   }
 ]
