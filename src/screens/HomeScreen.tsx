@@ -174,7 +174,6 @@ export function HomeScreen({
 
       <section className="roadmap">
         <h2 className="section-title">{vi.home.roadmapTitle}</h2>
-        <p className="muted">{vi.home.roadmapGoal}</p>
         <ol className="levels">
           <li className="level level-now">
             <span className="level-name">{vi.home.levelA1}</span>
