@@ -129,7 +129,7 @@
     "tipVi": "Đọc gần như \"bông-xoa\". Âm \"on\" là âm mũi, đừng đọc rõ chữ \"n\". \"oi\" đọc là \"oa\".",
     "exampleFr": "Bonsoir, monsieur.",
     "exampleVi": "Chào buổi tối, thưa ông.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-salut",
@@ -141,8 +141,7 @@
     "tipVi": "Đọc gần như \"xa-luy\". Chữ \"t\" ở cuối không đọc.",
     "exampleFr": "Salut, Anna !",
     "exampleVi": "Chào Anna!",
-    "status": "draft",
-    "reviewNotes": "Informal: only between friends or family."
+    "status": "validated"
   },
   {
     "id": "greetings-bonne-nuit",
@@ -154,7 +153,7 @@
     "tipVi": "Đọc gần như \"bon-nuy\". Chữ \"u\" tròn môi, đọc nhanh như \"uy\".",
     "exampleFr": "Bonne nuit, madame.",
     "exampleVi": "Chúc bà ngủ ngon.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-bienvenue",
@@ -166,7 +165,7 @@
     "tipVi": "Đọc gần như \"biên-vơ-nuy\". \"ien\" là âm mũi; chữ \"u\" tròn môi, giống \"i\" nhưng chu môi.",
     "exampleFr": "Bienvenue à Paris !",
     "exampleVi": "Chào mừng đến Paris!",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-a-bientot",
@@ -178,7 +177,7 @@
     "tipVi": "Đọc gần như \"a-biên-tô\". \"ien\" là âm mũi, \"ô\" kéo dài.",
     "exampleFr": "À bientôt, Anna !",
     "exampleVi": "Hẹn sớm gặp lại, Anna!",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-de-rien",
@@ -190,7 +189,7 @@
     "tipVi": "Đọc gần như \"đơ-ri-ên\". \"ien\" là âm mũi, đừng đọc rõ chữ \"n\".",
     "exampleFr": "Merci. — De rien.",
     "exampleVi": "Cảm ơn. — Không có gì.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-excusez-moi",
@@ -202,7 +201,7 @@
     "tipVi": "Đọc gần như \"éc-xkuy-dê moa\". Chữ \"u\" tròn môi.",
     "exampleFr": "Excusez-moi, madame.",
     "exampleVi": "Xin lỗi bà, cho tôi hỏi một chút.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "greetings-comment-ca-va",
@@ -214,7 +213,7 @@
     "tipVi": "Đọc gần như \"cô-măng xa va\". \"an\" là âm mũi; chữ \"ç\" đọc là \"x\".",
     "exampleFr": "Bonjour, comment ça va ?",
     "exampleVi": "Xin chào, bạn khỏe không?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-vous",
@@ -226,7 +225,7 @@
     "tipVi": "Đọc gần như \"vu\", môi tròn.",
     "exampleFr": "Et vous ?",
     "exampleVi": "Còn bạn thì sao?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-moi",
@@ -238,7 +237,7 @@
     "tipVi": "Đọc gần như \"moa\". \"oi\" đọc là \"oa\".",
     "exampleFr": "Moi, c'est Anna.",
     "exampleVi": "Tôi là Anna.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-et",
@@ -250,7 +249,7 @@
     "tipVi": "Đọc là \"ê\". Chữ \"t\" ở cuối không đọc.",
     "exampleFr": "Moi et vous.",
     "exampleVi": "Tôi và bạn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-enchante",
@@ -262,8 +261,7 @@
     "tipVi": "Đọc gần như \"ang-sắng-tê\". \"an\" là âm mũi; nhấn vào âm cuối.",
     "exampleFr": "Enchanté, Anna.",
     "exampleVi": "Rất vui được gặp bạn, Anna.",
-    "status": "draft",
-    "reviewNotes": "A woman would write \"enchantée\" (same sound); the tip does not mention it."
+    "status": "validated"
   },
   {
     "id": "introductions-ca-va",
@@ -275,7 +273,7 @@
     "tipVi": "Đọc gần như \"xa va\". Chữ \"ç\" đọc là \"x\".",
     "exampleFr": "Ça va bien, merci.",
     "exampleVi": "Tôi khỏe, cảm ơn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-bien",
@@ -287,7 +285,7 @@
     "tipVi": "Đọc gần như \"biên\", âm mũi, đừng đọc rõ chữ \"n\".",
     "exampleFr": "Ça va bien ?",
     "exampleVi": "Bạn khỏe không?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-je-viens-de",
@@ -299,7 +297,7 @@
     "tipVi": "Đọc gần như \"giơ viên đơ\". \"ien\" là âm mũi.",
     "exampleFr": "Je viens du Vietnam.",
     "exampleVi": "Tôi đến từ Việt Nam.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-je-ne-comprends-pas",
@@ -311,7 +309,7 @@
     "tipVi": "Đọc gần như \"giơ nơ công-prăng pa\". \"on\" và \"en\" là âm mũi; hai chữ \"ds\" cuối không đọc.",
     "exampleFr": "Pardon, je ne comprends pas.",
     "exampleVi": "Xin lỗi, tôi không hiểu.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "introductions-parlez-vous-francais",
@@ -323,7 +321,7 @@
     "tipVi": "Đọc gần như \"par-lê vu phrăng-xê\". Chữ \"ç\" đọc là \"x\"; \"ais\" đọc là \"ê\".",
     "exampleFr": "Parlez-vous français ? — Un peu.",
     "exampleVi": "Bạn có nói tiếng Pháp không? — Một chút.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-zero",
@@ -335,7 +333,7 @@
     "tipVi": "Đọc gần như \"dê-rô\". Âm \"z\" giống \"d\" mềm, có rung nhẹ trong cổ.",
     "exampleFr": "Zéro euro, c'est gratuit.",
     "exampleVi": "Không đồng nào, miễn phí.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-un",
@@ -347,8 +345,7 @@
     "tipVi": "Đọc gần như \"ơng\" mũi, môi hơi tròn. Đừng đọc rõ chữ \"n\".",
     "exampleFr": "Ça coûte un euro.",
     "exampleVi": "Cái này giá một euro.",
-    "status": "draft",
-    "reviewNotes": "The nasal vowel has no exact Vietnamese equivalent."
+    "status": "validated"
   },
   {
     "id": "numbers-deux",
@@ -360,7 +357,7 @@
     "tipVi": "Đọc gần như \"đơ\", môi tròn. Chữ \"x\" ở cuối không đọc.",
     "exampleFr": "Ça coûte deux euros.",
     "exampleVi": "Cái này giá hai euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-trois",
@@ -372,7 +369,7 @@
     "tipVi": "Đọc gần như \"troa\". \"oi\" đọc là \"oa\"; chữ \"s\" cuối không đọc.",
     "exampleFr": "Ça coûte trois euros.",
     "exampleVi": "Cái này giá ba euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-quatre",
@@ -384,7 +381,7 @@
     "tipVi": "Đọc gần như \"ca-trơ\". \"qu\" đọc là \"c\"; chữ \"e\" cuối rất nhẹ.",
     "exampleFr": "Ça coûte quatre euros.",
     "exampleVi": "Cái này giá bốn euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-cinq",
@@ -396,8 +393,7 @@
     "tipVi": "Đọc gần như \"xanh-c\". \"in\" là âm mũi; chữ \"q\" cuối đọc là \"c\".",
     "exampleFr": "Ça coûte cinq euros.",
     "exampleVi": "Cái này giá năm euro.",
-    "status": "draft",
-    "reviewNotes": "Approximate transcription of the nasal vowel."
+    "status": "validated"
   },
   {
     "id": "numbers-six",
@@ -409,7 +405,7 @@
     "tipVi": "Đọc gần như \"xít\". Khi đứng một mình, chữ \"x\" đọc là \"s\".",
     "exampleFr": "Ça coûte six euros.",
     "exampleVi": "Cái này giá sáu euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-sept",
@@ -421,7 +417,7 @@
     "tipVi": "Đọc gần như \"xét\". Chữ \"p\" không đọc.",
     "exampleFr": "Ça coûte sept euros.",
     "exampleVi": "Cái này giá bảy euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-huit",
@@ -433,8 +429,7 @@
     "tipVi": "Đọc gần như \"uýt\". Môi tròn rồi mở nhanh sang \"i\".",
     "exampleFr": "Ça coûte huit euros.",
     "exampleVi": "Cái này giá tám euro.",
-    "status": "draft",
-    "reviewNotes": "The sound \"hui\" has no Vietnamese equivalent; check the tip."
+    "status": "validated"
   },
   {
     "id": "numbers-neuf",
@@ -446,7 +441,7 @@
     "tipVi": "Đọc gần như \"nơf\". Môi tròn, kết thúc bằng âm \"f\".",
     "exampleFr": "Ça coûte neuf euros.",
     "exampleVi": "Cái này giá chín euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-dix",
@@ -458,7 +453,7 @@
     "tipVi": "Đọc gần như \"đít\". Khi đứng một mình, chữ \"x\" đọc là \"s\" nhẹ.",
     "exampleFr": "Ça coûte dix euros.",
     "exampleVi": "Cái này giá mười euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-vingt",
@@ -470,7 +465,7 @@
     "tipVi": "Đọc gần như \"vang\", âm mũi. Hai chữ \"gt\" ở cuối không đọc.",
     "exampleFr": "Ça coûte vingt euros.",
     "exampleVi": "Cái này giá hai mươi euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-cinquante",
@@ -482,7 +477,7 @@
     "tipVi": "Đọc gần như \"xanh-căng-t\". Có hai âm mũi: \"in\" và \"an\".",
     "exampleFr": "Ça coûte cinquante euros.",
     "exampleVi": "Cái này giá năm mươi euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-cent",
@@ -494,7 +489,7 @@
     "tipVi": "Đọc gần như \"xăng\", âm mũi. Chữ \"t\" cuối không đọc.",
     "exampleFr": "Ça coûte cent euros.",
     "exampleVi": "Cái này giá một trăm euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-combien",
@@ -506,7 +501,7 @@
     "tipVi": "Đọc gần như \"công-biên\". Hai âm mũi, đừng đọc rõ chữ \"n\".",
     "exampleFr": "Combien d'euros ?",
     "exampleVi": "Bao nhiêu euro?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-euro",
@@ -518,7 +513,7 @@
     "tipVi": "Đọc gần như \"ơ-rô\". Môi tròn ở âm đầu.",
     "exampleFr": "Un euro, deux euros.",
     "exampleVi": "Một euro, hai euro.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-c-est-combien",
@@ -531,7 +526,7 @@
     "exampleFr": "Pardon, c'est combien ?",
     "exampleVi": "Xin lỗi, cái này bao nhiêu tiền?",
     "requires": ["numbers-combien"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "numbers-c-est-trop-cher",
@@ -543,7 +538,7 @@
     "tipVi": "Đọc gần như \"xê trô se\". \"ch\" đọc như \"s\" nhẹ.",
     "exampleFr": "Non, c'est trop cher.",
     "exampleVi": "Không, đắt quá.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-eau",
@@ -555,7 +550,7 @@
     "tipVi": "Đọc là \"ô\". Ba chữ \"eau\" chỉ là một âm.",
     "exampleFr": "Un verre d'eau, s'il vous plaît.",
     "exampleVi": "Cho tôi một ly nước.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-pain",
@@ -567,7 +562,7 @@
     "tipVi": "Đọc gần như \"panh\", âm mũi. Đừng đọc rõ chữ \"n\".",
     "exampleFr": "Du pain, s'il vous plaît.",
     "exampleVi": "Cho tôi ít bánh mì.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-riz",
@@ -579,7 +574,7 @@
     "tipVi": "Đọc gần như \"ri\" với \"r\" ở cổ họng. Chữ \"z\" cuối không đọc.",
     "exampleFr": "Du riz et du poulet.",
     "exampleVi": "Cơm và thịt gà.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-poulet",
@@ -591,7 +586,7 @@
     "tipVi": "Đọc gần như \"pu-lê\". Chữ \"t\" cuối không đọc.",
     "exampleFr": "Le poulet est bon.",
     "exampleVi": "Món gà ngon.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-cafe",
@@ -603,7 +598,7 @@
     "tipVi": "Đọc gần như \"ca-phê\".",
     "exampleFr": "Un café, s'il vous plaît.",
     "exampleVi": "Cho tôi một ly cà phê.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-lait",
@@ -615,7 +610,7 @@
     "tipVi": "Đọc gần như \"lê\". \"ait\" đọc là \"ê\".",
     "exampleFr": "Du lait dans le café.",
     "exampleVi": "Sữa trong cà phê.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-the",
@@ -627,7 +622,7 @@
     "tipVi": "Đọc là \"tê\". \"th\" đọc như \"t\" thường.",
     "exampleFr": "Un thé, s'il vous plaît.",
     "exampleVi": "Cho tôi một ly trà.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-sucre",
@@ -639,7 +634,7 @@
     "tipVi": "Đọc gần như \"xuy-crơ\". Chữ \"u\" tròn môi.",
     "exampleFr": "Du sucre dans le thé.",
     "exampleVi": "Đường trong trà.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-sel",
@@ -651,7 +646,7 @@
     "tipVi": "Đọc gần như \"xen\". Chữ \"l\" cuối đọc nhẹ.",
     "exampleFr": "Pas de sel, s'il vous plaît.",
     "exampleVi": "Làm ơn đừng cho muối.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-fromage",
@@ -663,7 +658,7 @@
     "tipVi": "Đọc gần như \"phrô-ma-giơ\". Chữ \"g\" đọc như \"gi\" nhẹ.",
     "exampleFr": "Du pain et du fromage.",
     "exampleVi": "Bánh mì và phô mai.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-oeuf",
@@ -675,8 +670,7 @@
     "tipVi": "Đọc gần như \"ơf\". Số nhiều \"œufs\" đọc là \"ơ\".",
     "exampleFr": "Un œuf, s'il vous plaît.",
     "exampleVi": "Cho tôi một quả trứng.",
-    "status": "draft",
-    "reviewNotes": "The plural pronunciation is an exception, check it fits the tip."
+    "status": "validated"
   },
   {
     "id": "food-viande",
@@ -688,7 +682,7 @@
     "tipVi": "Đọc gần như \"vi-ăng-đơ\". \"an\" là âm mũi.",
     "exampleFr": "Je ne mange pas de viande.",
     "exampleVi": "Tôi không ăn thịt.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-poisson",
@@ -700,7 +694,7 @@
     "tipVi": "Đọc gần như \"poa-xông\". \"oi\" đọc là \"oa\"; \"on\" là âm mũi.",
     "exampleFr": "Du poisson et du riz.",
     "exampleVi": "Cá và cơm.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-legumes",
@@ -712,7 +706,7 @@
     "tipVi": "Đọc gần như \"lê-guym\". Chữ \"u\" tròn môi.",
     "exampleFr": "Des légumes, s'il vous plaît.",
     "exampleVi": "Cho tôi ít rau.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-fruit",
@@ -724,7 +718,7 @@
     "tipVi": "Đọc gần như \"phruy\". \"ui\" đọc nhanh như \"uy\".",
     "exampleFr": "J'aime les fruits.",
     "exampleVi": "Tôi thích trái cây.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-pomme",
@@ -736,7 +730,7 @@
     "tipVi": "Đọc gần như \"pôm\". Chữ \"e\" cuối không đọc.",
     "exampleFr": "Une pomme, s'il vous plaît.",
     "exampleVi": "Cho tôi một quả táo.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-banane",
@@ -748,7 +742,7 @@
     "tipVi": "Đọc gần như \"ba-nan\". Chữ \"e\" cuối không đọc.",
     "exampleFr": "Une banane et une pomme.",
     "exampleVi": "Một quả chuối và một quả táo.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-soupe",
@@ -760,7 +754,7 @@
     "tipVi": "Đọc gần như \"xúp\". \"ou\" đọc là \"u\".",
     "exampleFr": "De la soupe, s'il vous plaît.",
     "exampleVi": "Cho tôi một bát súp.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-jus",
@@ -772,7 +766,7 @@
     "tipVi": "Đọc gần như \"giuy\". Chữ \"u\" tròn môi; chữ \"s\" cuối không đọc.",
     "exampleFr": "Un jus d'orange, s'il vous plaît.",
     "exampleVi": "Cho tôi một ly nước cam.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-j-ai-faim",
@@ -784,7 +778,7 @@
     "tipVi": "Đọc gần như \"gê phanh\". \"ain\" là âm mũi.",
     "exampleFr": "J'ai faim !",
     "exampleVi": "Tôi đói!",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-j-ai-soif",
@@ -797,7 +791,7 @@
     "exampleFr": "J'ai soif, de l'eau, s'il vous plaît.",
     "exampleVi": "Tôi khát, cho tôi xin nước.",
     "requires": ["food-eau"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-je-voudrais",
@@ -809,7 +803,7 @@
     "tipVi": "Đọc gần như \"giơ vu-đrê\". \"ais\" đọc là \"ê\".",
     "exampleFr": "Je voudrais un café.",
     "exampleVi": "Tôi muốn một ly cà phê.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-l-addition-s-il-vous-plait",
@@ -821,7 +815,7 @@
     "tipVi": "Đọc gần như \"la-đi-xiông, xil vu plê\". \"tion\" đọc là \"xiông\".",
     "exampleFr": "Monsieur, l'addition, s'il vous plaît.",
     "exampleVi": "Thưa ông, cho tôi xin hóa đơn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-c-est-bon",
@@ -834,7 +828,7 @@
     "exampleFr": "Le poulet, c'est bon !",
     "exampleVi": "Món gà ngon quá!",
     "requires": ["food-poulet"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "food-bon-appetit",
@@ -846,7 +840,7 @@
     "tipVi": "Đọc gần như \"bo-na-pê-ti\". Chữ \"n\" nối sang \"a\"; chữ \"t\" cuối không đọc.",
     "exampleFr": "Bon appétit !",
     "exampleVi": "Chúc ngon miệng!",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-voici",
@@ -858,7 +852,7 @@
     "tipVi": "Đọc gần như \"voa-xi\". \"oi\" đọc là \"oa\".",
     "exampleFr": "Voici mon ami.",
     "exampleVi": "Đây là bạn tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-famille",
@@ -870,7 +864,7 @@
     "tipVi": "Đọc gần như \"pha-mi-y\". \"ille\" đọc là \"i-y\".",
     "exampleFr": "J'aime ma famille.",
     "exampleVi": "Tôi yêu gia đình tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-mere",
@@ -882,7 +876,7 @@
     "tipVi": "Đọc gần như \"me\" + \"r\" nhẹ ở cổ họng.",
     "exampleFr": "Voici ma mère.",
     "exampleVi": "Đây là mẹ tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-pere",
@@ -894,7 +888,7 @@
     "tipVi": "Đọc gần như \"pe\" + \"r\" nhẹ ở cổ họng.",
     "exampleFr": "Voici mon père.",
     "exampleVi": "Đây là bố tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-mari",
@@ -906,7 +900,7 @@
     "tipVi": "Đọc gần như \"ma-ri\".",
     "exampleFr": "Voici mon mari.",
     "exampleVi": "Đây là chồng tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-femme",
@@ -918,8 +912,7 @@
     "tipVi": "Đọc gần như \"phăm\". Chữ \"e\" đầu đọc là \"a\": đây là ngoại lệ.",
     "exampleFr": "Voici ma femme.",
     "exampleVi": "Đây là vợ tôi.",
-    "status": "draft",
-    "reviewNotes": "The same word means \"woman\" and \"wife\"; check the translation."
+    "status": "validated"
   },
   {
     "id": "family-fils",
@@ -931,8 +924,7 @@
     "tipVi": "Đọc gần như \"phis\". Chữ \"l\" không đọc, nhưng chữ \"s\" cuối được đọc.",
     "exampleFr": "Voici mon fils.",
     "exampleVi": "Đây là con trai tôi.",
-    "status": "draft",
-    "reviewNotes": "Exceptional pronunciation (final s is pronounced)."
+    "status": "validated"
   },
   {
     "id": "family-fille",
@@ -944,7 +936,7 @@
     "tipVi": "Đọc gần như \"phi-y\". \"ille\" đọc là \"i-y\".",
     "exampleFr": "Voici ma fille.",
     "exampleVi": "Đây là con gái tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-frere",
@@ -956,7 +948,7 @@
     "tipVi": "Đọc gần như \"phrê-r\". Hai âm \"r\" nhẹ ở cổ họng.",
     "exampleFr": "J'ai un frère.",
     "exampleVi": "Tôi có một anh (hoặc em) trai.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-soeur",
@@ -968,7 +960,7 @@
     "tipVi": "Đọc gần như \"xơ-r\". Môi tròn ở âm \"œu\".",
     "exampleFr": "J'ai une sœur.",
     "exampleVi": "Tôi có một chị (hoặc em) gái.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-enfant",
@@ -980,7 +972,7 @@
     "tipVi": "Đọc gần như \"ăng-phăng\". Hai âm mũi.",
     "exampleFr": "J'ai un enfant.",
     "exampleVi": "Tôi có một đứa con.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-ami",
@@ -992,7 +984,7 @@
     "tipVi": "Đọc gần như \"a-mi\".",
     "exampleFr": "C'est mon ami.",
     "exampleVi": "Đây là bạn tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "family-bebe",
@@ -1004,7 +996,7 @@
     "tipVi": "Đọc gần như \"bê-bê\".",
     "exampleFr": "Voici le bébé.",
     "exampleVi": "Đây là em bé.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-maison",
@@ -1016,7 +1008,7 @@
     "tipVi": "Đọc gần như \"mê-dông\". \"s\" giữa hai nguyên âm đọc là \"z\"; \"on\" là âm mũi.",
     "exampleFr": "J'habite dans une maison.",
     "exampleVi": "Tôi sống trong một ngôi nhà.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-appartement",
@@ -1028,7 +1020,7 @@
     "tipVi": "Đọc gần như \"a-par-tơ-măng\". \"ent\" cuối là âm mũi.",
     "exampleFr": "J'habite dans un appartement.",
     "exampleVi": "Tôi sống trong một căn hộ.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-porte",
@@ -1040,7 +1032,7 @@
     "tipVi": "Đọc gần như \"pốt\" + \"r\" nhẹ ở cổ họng.",
     "exampleFr": "Voici la porte.",
     "exampleVi": "Đây là cái cửa.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-fenetre",
@@ -1052,7 +1044,7 @@
     "tipVi": "Đọc gần như \"phơ-nê-trơ\".",
     "exampleFr": "Ouvrez la fenêtre, s'il vous plaît.",
     "exampleVi": "Làm ơn mở cửa sổ.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-table",
@@ -1064,7 +1056,7 @@
     "tipVi": "Đọc gần như \"ta-blơ\". Chữ \"e\" cuối rất nhẹ.",
     "exampleFr": "Une table pour deux.",
     "exampleVi": "Một bàn cho hai người.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-chaise",
@@ -1076,7 +1068,7 @@
     "tipVi": "Đọc gần như \"se-z\". \"ch\" đọc như \"s\" nhẹ.",
     "exampleFr": "Une chaise, s'il vous plaît.",
     "exampleVi": "Cho tôi một cái ghế.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-lit",
@@ -1088,7 +1080,7 @@
     "tipVi": "Đọc là \"li\". Chữ \"t\" cuối không đọc.",
     "exampleFr": "Je suis dans mon lit.",
     "exampleVi": "Tôi đang ở trên giường.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-cuisine",
@@ -1100,7 +1092,7 @@
     "tipVi": "Đọc gần như \"cuy-din\". \"s\" giữa hai nguyên âm đọc là \"z\".",
     "exampleFr": "La cuisine est ici.",
     "exampleVi": "Nhà bếp ở đây.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-chambre",
@@ -1112,7 +1104,7 @@
     "tipVi": "Đọc gần như \"săng-brơ\". \"am\" là âm mũi.",
     "exampleFr": "Ma chambre est ici.",
     "exampleVi": "Phòng ngủ của tôi ở đây.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-salle-de-bain",
@@ -1124,7 +1116,7 @@
     "tipVi": "Đọc gần như \"xan đơ banh\". \"ain\" là âm mũi.",
     "exampleFr": "La salle de bain est à gauche.",
     "exampleVi": "Phòng tắm ở bên trái.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-cle",
@@ -1136,7 +1128,7 @@
     "tipVi": "Đọc gần như \"clê\". Đọc nhanh, đừng tách thành \"cờ-lê\".",
     "exampleFr": "Voici la clé.",
     "exampleVi": "Đây là chìa khóa.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-lumiere",
@@ -1148,7 +1140,7 @@
     "tipVi": "Đọc gần như \"luy-mi-e-r\". Chữ \"u\" tròn môi.",
     "exampleFr": "La lumière, s'il vous plaît.",
     "exampleVi": "Làm ơn bật đèn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-telephone",
@@ -1160,7 +1152,7 @@
     "tipVi": "Đọc gần như \"tê-lê-phôn\".",
     "exampleFr": "Mon téléphone est ici.",
     "exampleVi": "Điện thoại của tôi ở đây.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-chez-moi",
@@ -1173,7 +1165,7 @@
     "exampleFr": "Bienvenue chez moi !",
     "exampleVi": "Chào mừng đến nhà tôi!",
     "requires": ["introductions-moi", "greetings-bienvenue"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "home-ouvrez-la-porte",
@@ -1186,7 +1178,7 @@
     "exampleFr": "Ouvrez la porte, s'il vous plaît.",
     "exampleVi": "Làm ơn mở cửa.",
     "requires": ["home-porte"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-ou",
@@ -1198,7 +1190,7 @@
     "tipVi": "Đọc là \"u\". Dấu \"ù\" chỉ để phân biệt với từ \"ou\" (hoặc).",
     "exampleFr": "Où est la gare ?",
     "exampleVi": "Ga tàu ở đâu?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-a-gauche",
@@ -1210,7 +1202,7 @@
     "tipVi": "Đọc gần như \"a gôs\". \"au\" đọc là \"ô\"; \"ch\" không có; chữ \"g\" đọc cứng.",
     "exampleFr": "Tournez à gauche.",
     "exampleVi": "Rẽ trái.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-a-droite",
@@ -1222,7 +1214,7 @@
     "tipVi": "Đọc gần như \"a đroát\". \"oi\" đọc là \"oa\".",
     "exampleFr": "Tournez à droite.",
     "exampleVi": "Rẽ phải.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-tout-droit",
@@ -1234,7 +1226,7 @@
     "tipVi": "Đọc gần như \"tu đroa\". Chữ \"t\" cuối của \"droit\" không đọc.",
     "exampleFr": "Allez tout droit.",
     "exampleVi": "Đi thẳng.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-rue",
@@ -1246,7 +1238,7 @@
     "tipVi": "Đọc gần như \"ry\" với chữ \"u\" tròn môi.",
     "exampleFr": "Tournez à gauche dans la rue.",
     "exampleVi": "Rẽ trái vào con đường đó.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-gare",
@@ -1258,7 +1250,7 @@
     "tipVi": "Đọc gần như \"ga-r\". Chữ \"g\" đọc cứng như trong \"gà\".",
     "exampleFr": "Je vais à la gare.",
     "exampleVi": "Tôi đi đến ga.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-pharmacie",
@@ -1270,7 +1262,7 @@
     "tipVi": "Đọc gần như \"phar-ma-xi\". \"ph\" đọc là \"f\".",
     "exampleFr": "La pharmacie est à gauche.",
     "exampleVi": "Nhà thuốc ở bên trái.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-hotel",
@@ -1282,7 +1274,7 @@
     "tipVi": "Đọc gần như \"ô-ten\". Chữ \"h\" không đọc.",
     "exampleFr": "Je cherche un hôtel.",
     "exampleVi": "Tôi đang tìm một khách sạn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-restaurant",
@@ -1294,7 +1286,7 @@
     "tipVi": "Đọc gần như \"rét-tô-răng\". \"ant\" cuối là âm mũi.",
     "exampleFr": "Il y a un restaurant ici.",
     "exampleVi": "Ở đây có một nhà hàng.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-aeroport",
@@ -1306,7 +1298,7 @@
     "tipVi": "Đọc gần như \"a-ê-rô-po\". Chữ \"t\" cuối không đọc.",
     "exampleFr": "Je vais à l'aéroport.",
     "exampleVi": "Tôi đi đến sân bay.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-bus",
@@ -1318,7 +1310,7 @@
     "tipVi": "Đọc gần như \"buys\". Chữ \"u\" tròn môi, chữ \"s\" cuối được đọc.",
     "exampleFr": "Je prends le bus.",
     "exampleVi": "Tôi đi xe buýt.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-train",
@@ -1330,7 +1322,7 @@
     "tipVi": "Đọc gần như \"trang\", âm mũi.",
     "exampleFr": "Je prends le train.",
     "exampleVi": "Tôi đi tàu hỏa.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-taxi",
@@ -1342,7 +1334,7 @@
     "tipVi": "Đọc gần như \"tác-xi\".",
     "exampleFr": "Un taxi, s'il vous plaît.",
     "exampleVi": "Làm ơn gọi cho tôi một chiếc taxi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-ici",
@@ -1354,7 +1346,7 @@
     "tipVi": "Đọc gần như \"i-xi\".",
     "exampleFr": "Je suis ici.",
     "exampleVi": "Tôi ở đây.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-loin",
@@ -1366,7 +1358,7 @@
     "tipVi": "Đọc gần như \"loang\", âm mũi.",
     "exampleFr": "C'est loin ?",
     "exampleVi": "Có xa không?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-pres",
@@ -1378,7 +1370,7 @@
     "tipVi": "Đọc gần như \"prê\". Chữ \"s\" cuối không đọc.",
     "exampleFr": "C'est près d'ici.",
     "exampleVi": "Gần đây thôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-ou-est-la-gare",
@@ -1391,7 +1383,7 @@
     "exampleFr": "Pardon, où est la gare ?",
     "exampleVi": "Xin lỗi, ga tàu ở đâu ạ?",
     "requires": ["getting-around-ou", "getting-around-gare"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "getting-around-je-cherche-la-pharmacie",
@@ -1404,7 +1396,7 @@
     "exampleFr": "Excusez-moi, je cherche la pharmacie.",
     "exampleVi": "Xin lỗi, tôi đang tìm nhà thuốc.",
     "requires": ["getting-around-pharmacie"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-acheter",
@@ -1416,7 +1408,7 @@
     "tipVi": "Đọc gần như \"a-sờ-tê\". \"ch\" đọc như \"s\" nhẹ.",
     "exampleFr": "Je voudrais acheter ça.",
     "exampleVi": "Tôi muốn mua cái này.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-payer",
@@ -1428,7 +1420,7 @@
     "tipVi": "Đọc gần như \"pê-yê\".",
     "exampleFr": "Je voudrais payer.",
     "exampleVi": "Tôi muốn thanh toán.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-argent",
@@ -1440,7 +1432,7 @@
     "tipVi": "Đọc gần như \"ar-giăng\". \"ent\" cuối là âm mũi.",
     "exampleFr": "Je n'ai pas d'argent.",
     "exampleVi": "Tôi không có tiền.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-carte",
@@ -1452,7 +1444,7 @@
     "tipVi": "Đọc gần như \"cát\" + \"r\" nhẹ ở cổ họng.",
     "exampleFr": "Voici ma carte.",
     "exampleVi": "Đây là thẻ của tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-especes",
@@ -1464,8 +1456,7 @@
     "tipVi": "Đọc gần như \"ét-pét\". Chữ \"s\" cuối đọc rất nhẹ.",
     "exampleFr": "Je paie en espèces.",
     "exampleVi": "Tôi trả bằng tiền mặt.",
-    "status": "draft",
-    "reviewNotes": "The French plural noun is always used in this meaning; check the tip."
+    "status": "validated"
   },
   {
     "id": "shopping-magasin",
@@ -1477,7 +1468,7 @@
     "tipVi": "Đọc gần như \"ma-ga-danh\". \"s\" giữa hai nguyên âm đọc là \"z\".",
     "exampleFr": "Le magasin est près d'ici.",
     "exampleVi": "Cửa hàng ở gần đây.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-marche",
@@ -1489,7 +1480,7 @@
     "tipVi": "Đọc gần như \"mar-sê\". \"ch\" đọc như \"s\" nhẹ.",
     "exampleFr": "Je vais au marché.",
     "exampleVi": "Tôi đi chợ.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-sac",
@@ -1501,7 +1492,7 @@
     "tipVi": "Đọc gần như \"xác\". Chữ \"c\" cuối được đọc.",
     "exampleFr": "Un sac, s'il vous plaît.",
     "exampleVi": "Cho tôi một cái túi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-kilo",
@@ -1513,7 +1504,7 @@
     "tipVi": "Đọc gần như \"ki-lô\".",
     "exampleFr": "Un kilo de riz, s'il vous plaît.",
     "exampleVi": "Cho tôi một ki-lô gạo.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-un-peu",
@@ -1525,7 +1516,7 @@
     "tipVi": "Đọc gần như \"ơng pơ\". Môi tròn ở âm \"eu\".",
     "exampleFr": "Un peu d'eau, s'il vous plaît.",
     "exampleVi": "Cho tôi một chút nước.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-beaucoup",
@@ -1537,7 +1528,7 @@
     "tipVi": "Đọc gần như \"bô-cu\". \"eau\" đọc là \"ô\"; chữ \"p\" cuối không đọc.",
     "exampleFr": "Merci beaucoup !",
     "exampleVi": "Cảm ơn nhiều!",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-ca",
@@ -1549,7 +1540,7 @@
     "tipVi": "Đọc gần như \"xa\". Chữ \"ç\" đọc là \"x\".",
     "exampleFr": "Je voudrais ça.",
     "exampleVi": "Tôi muốn cái này.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-payer-par-carte",
@@ -1562,7 +1553,7 @@
     "exampleFr": "Je peux payer par carte ?",
     "exampleVi": "Tôi có thể trả bằng thẻ không?",
     "requires": ["shopping-payer", "shopping-carte"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-c-est-tout",
@@ -1574,7 +1565,7 @@
     "tipVi": "Đọc gần như \"xê tu\". Chữ \"t\" cuối của \"tout\" không đọc.",
     "exampleFr": "Oui, c'est tout, merci.",
     "exampleVi": "Vâng, hết rồi, cảm ơn.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "shopping-je-prends-ca",
@@ -1587,7 +1578,7 @@
     "exampleFr": "Je prends ça, merci.",
     "exampleVi": "Tôi lấy cái này, cảm ơn.",
     "requires": ["shopping-ca"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-au-secours",
@@ -1599,7 +1590,7 @@
     "tipVi": "Đọc gần như \"ô xơ-cu-r\". \"au\" đọc là \"ô\".",
     "exampleFr": "Au secours !",
     "exampleVi": "Cứu tôi với!",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-aidez-moi",
@@ -1611,7 +1602,7 @@
     "tipVi": "Đọc gần như \"ê-đê moa\".",
     "exampleFr": "Aidez-moi, s'il vous plaît.",
     "exampleVi": "Làm ơn giúp tôi.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-medecin",
@@ -1623,7 +1614,7 @@
     "tipVi": "Đọc gần như \"mê-đơ-xanh\". \"in\" là âm mũi.",
     "exampleFr": "Je cherche un médecin.",
     "exampleVi": "Tôi đang tìm bác sĩ.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-hopital",
@@ -1635,7 +1626,7 @@
     "tipVi": "Đọc gần như \"ô-pi-tan\". Chữ \"h\" không đọc.",
     "exampleFr": "Où est l'hôpital ?",
     "exampleVi": "Bệnh viện ở đâu?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-malade",
@@ -1647,7 +1638,7 @@
     "tipVi": "Đọc gần như \"ma-lát\".",
     "exampleFr": "Je suis malade.",
     "exampleVi": "Tôi bị ốm.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-j-ai-mal",
@@ -1660,7 +1651,7 @@
     "exampleFr": "J'ai mal ici.",
     "exampleVi": "Tôi đau ở đây.",
     "requires": ["getting-around-ici"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-tete",
@@ -1672,7 +1663,7 @@
     "tipVi": "Đọc gần như \"tét\".",
     "exampleFr": "J'ai mal à la tête.",
     "exampleVi": "Tôi bị đau đầu.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-ventre",
@@ -1684,7 +1675,7 @@
     "tipVi": "Đọc gần như \"văng-trơ\". \"en\" là âm mũi.",
     "exampleFr": "J'ai mal au ventre.",
     "exampleVi": "Tôi bị đau bụng.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-medicament",
@@ -1696,7 +1687,7 @@
     "tipVi": "Đọc gần như \"mê-đi-ca-măng\". \"ent\" cuối là âm mũi.",
     "exampleFr": "Je cherche un médicament.",
     "exampleVi": "Tôi đang tìm thuốc.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "health-appelez-un-medecin",
@@ -1709,7 +1700,7 @@
     "exampleFr": "Appelez un médecin, s'il vous plaît.",
     "exampleVi": "Làm ơn gọi bác sĩ.",
     "requires": ["health-medecin"],
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-aujourd-hui",
@@ -1721,7 +1712,7 @@
     "tipVi": "Đọc gần như \"ô-giua-đuy\".",
     "exampleFr": "Aujourd'hui, ça va bien.",
     "exampleVi": "Hôm nay tôi khỏe.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-demain",
@@ -1733,7 +1724,7 @@
     "tipVi": "Đọc gần như \"đơ-manh\". \"ain\" là âm mũi.",
     "exampleFr": "À demain !",
     "exampleVi": "Hẹn mai gặp lại!",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-hier",
@@ -1745,7 +1736,7 @@
     "tipVi": "Đọc gần như \"i-e-r\". Chữ \"h\" không đọc.",
     "exampleFr": "Hier et aujourd'hui.",
     "exampleVi": "Hôm qua và hôm nay.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-maintenant",
@@ -1757,7 +1748,7 @@
     "tipVi": "Đọc gần như \"manh-tơ-năng\". Hai âm mũi.",
     "exampleFr": "Je voudrais payer maintenant.",
     "exampleVi": "Tôi muốn thanh toán ngay bây giờ.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-matin",
@@ -1769,7 +1760,7 @@
     "tipVi": "Đọc gần như \"ma-tanh\". \"in\" là âm mũi.",
     "exampleFr": "Le matin, un café, s'il vous plaît.",
     "exampleVi": "Buổi sáng, cho tôi một ly cà phê.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-soir",
@@ -1781,7 +1772,7 @@
     "tipVi": "Đọc gần như \"xoa-r\". \"oi\" đọc là \"oa\".",
     "exampleFr": "Ce soir, je suis à la maison.",
     "exampleVi": "Tối nay tôi ở nhà.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-heure",
@@ -1793,7 +1784,7 @@
     "tipVi": "Đọc gần như \"ơ-r\". Chữ \"h\" không đọc.",
     "exampleFr": "À quelle heure ?",
     "exampleVi": "Mấy giờ?",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-jour",
@@ -1805,7 +1796,7 @@
     "tipVi": "Đọc gần như \"giu-r\".",
     "exampleFr": "Un jour, deux jours.",
     "exampleVi": "Một ngày, hai ngày.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-semaine",
@@ -1817,7 +1808,7 @@
     "tipVi": "Đọc gần như \"xơ-men\". Chữ \"e\" cuối không đọc.",
     "exampleFr": "Une semaine à Paris.",
     "exampleVi": "Một tuần ở Paris.",
-    "status": "draft"
+    "status": "validated"
   },
   {
     "id": "time-quelle-heure-est-il",
@@ -1830,6 +1821,6 @@
     "exampleFr": "Pardon, quelle heure est-il ?",
     "exampleVi": "Xin lỗi, mấy giờ rồi ạ?",
     "requires": ["time-heure"],
-    "status": "draft"
+    "status": "validated"
   }
 ]
