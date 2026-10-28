@@ -18,10 +18,10 @@ Fonts: Be Vietnam Pro (Vietnamese) and Poppins (French, app name), installed via
 Three appearances (light, dark, mint green), chosen in Settings and stored per device (`parler.appearance`); palettes live in src/styles/tokens.css under `html[data-appearance]`. Use the `*-ink` tokens for colored text.
 Reference mockups: docs/mockups.pdf (local only, git-ignored: it contains personal information, never commit it).
 
-## Audio (V0 decision)
+## Audio (decision)
 
-No generated mp3 and no Google TTS in V0: pronunciation uses the browser Web Speech API (speechSynthesis, fr-FR),
-triggered only by a user tap. Card `audio` fields are optional for now.
+Pronunciation uses the browser Web Speech API (speechSynthesis, fr-FR), triggered only by a user tap.
+Decision: no generated mp3 and no Google TTS; the card `audio` field is optional and unused.
 
 ## Content (V0 decision)
 

@@ -30,16 +30,16 @@ V0 is a static site (Vite + React + TypeScript) turned into an installable PWA: 
 
 A PWA (Progressive Web App) is a website added to the phone's home screen; it opens full screen like an app and can work offline thanks to a service worker, a small script that keeps the files in cache.
 
-| Decision             | Choice                                                       | Reason                                                                                                                                                                              |
-| -------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| App type             | PWA, not a native app                                        | No app store, one codebase for iPhone and Android                                                                                                                                   |
-| Language and tooling | Vite + React + TypeScript                                    | Common, well-documented stack, produces a static site                                                                                                                               |
-| PWA                  | vite-plugin-pwa (Workbox)                                    | Generates the manifest, the service worker and the offline cache                                                                                                                    |
-| Content              | A JSON file in the repository                                | No database; each card is reviewed before publication                                                                                                                               |
-| Audio                | Browser Web Speech API in V0 (pre-generated mp3 files later) | No account or generation step needed to test; quality depends on the phone's voice                                                                                                  |
-| Progress             | Browser local storage, with export and import                | No account to create; the data is tiny                                                                                                                                              |
-| Content generation   | Cards written directly and reviewed by the maintainer        | No API key or script needed for a V0 test                                                                                                                                           |
-| Hosting              | GitHub Pages                                                 | Free for a public repository; commercial use is not allowed on this service ([GitHub docs](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)) |
+| Decision             | Choice                                                | Reason                                                                                                                                                                              |
+| -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| App type             | PWA, not a native app                                 | No app store, one codebase for iPhone and Android                                                                                                                                   |
+| Language and tooling | Vite + React + TypeScript                             | Common, well-documented stack, produces a static site                                                                                                                               |
+| PWA                  | vite-plugin-pwa (Workbox)                             | Generates the manifest, the service worker and the offline cache                                                                                                                    |
+| Content              | A JSON file in the repository                         | No database; each card is reviewed before publication                                                                                                                               |
+| Audio                | Browser Web Speech API (speech synthesis)             | No account, key or audio files to produce; the voice comes from the device, so quality depends on it                                                                                |
+| Progress             | Browser local storage, with export and import         | No account to create; the data is tiny                                                                                                                                              |
+| Content generation   | Cards written directly and reviewed by the maintainer | No API key or script needed for a V0 test                                                                                                                                           |
+| Hosting              | GitHub Pages                                          | Free for a public repository; commercial use is not allowed on this service ([GitHub docs](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)) |
 
 The full path, from idea to phone:
 
@@ -62,12 +62,9 @@ The full path, from idea to phone:
 
 **Accounts**
 
-| Account                        | Purpose                                                                                 | Cost in V0                                                                                                                                                |
-| ------------------------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GitHub                         | Hosts the code and the site (GitHub Pages); a workflow publishes the site on every push | Free (public repository)                                                                                                                                  |
-| Google Cloud (optional, later) | Text-to-speech to pre-generate French audio files                                       | Free within the monthly quota; billing activation is required even for the free quota ([Google pricing](https://cloud.google.com/text-to-speech/pricing)) |
-
-The Google Cloud free monthly quota for Text-to-Speech covers 4 million characters for Standard and WaveNet voices and 1 million for Neural2 and Chirp 3 HD ([CostBench](https://costbench.com/software/ai-voice-tools/google-cloud-text-to-speech/free-plan/)). This is far above V0 needs (a few tens of thousands of characters for 200 cards), but check the pricing page when creating the account.
+| Account | Purpose                                                                                 | Cost in V0               |
+| ------- | --------------------------------------------------------------------------------------- | ------------------------ |
+| GitHub  | Hosts the code and the site (GitHub Pages); a workflow publishes the site on every push | Free (public repository) |
 
 **Optional**: a domain name (about 10 EUR per year, approximate). Without one, GitHub Pages provides an address like `<account>.github.io/<repo-name>/`.
 
@@ -97,7 +94,7 @@ type Card = {
   tipVi: string // tip / explanation in Vietnamese (to be reviewed)
   exampleFr?: string // example sentence (for words)
   exampleVi?: string // its translation
-  audio: { main: string; example?: string } // mp3 paths
+  audio?: { main: string; example?: string } // reserved for pre-recorded files; unused, speech comes from the browser
   requires?: string[] // ids of the words to know before this phrase
   status: 'draft' | 'validated' // only validated cards are published
 }
@@ -131,7 +128,6 @@ type AppState = {
   "fr": "bonjour",
   "vi": "xin chào",
   "tipVi": "(pronunciation tip in Vietnamese, to be validated)",
-  "audio": { "main": "audio/greetings-hello.mp3" },
   "status": "draft"
 }
 ```
@@ -270,13 +266,12 @@ The content goes through a few steps, and the manual review is what guarantees t
 1. **Source list**: a `content/source/words.csv` file with one line per card (columns: id, themeId, type, fr, optional notes).
 2. **Writing the cards**: each new card is written into `cards.json` with the `draft` status. In the original plan an API script produced them; for V0 they are written directly.
 3. **Review** (`npm run review`): a review screen, run locally only, shows the draft cards; the reviewer fixes the fields and clicks Validate or Reject. This screen is not part of the published site.
-4. **Audio**: in V0 the app uses the browser's speech synthesis, triggered by a tap. Generating mp3 files with a text-to-speech service is a later option; the `audio` field of the card is already planned for it.
+4. **Audio**: there is nothing to generate. The app reads the French text aloud with the browser's speech synthesis, triggered by a tap, so the reviewer hears the card exactly as the learner will.
 
 **Rules**
 
 - Never overwrite a `validated` card; only process new or explicitly re-run lines
 - Any doubt (ambiguous translation, uncertain tip) is written in a `reviewNotes` field; the review screen shows these notes first
-- If an audio generation script is added later: French voice chosen after listening to three candidates, a slightly slowed rate for words (about 0.9), mono low-bitrate mp3 named after the card id, and a count of characters sent to follow the free quota
 
 **Check for each card (review)**
 
@@ -318,7 +313,7 @@ The build is split into ten steps, one Claude Code session per step, each with a
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | M0 Setup           | Vite + React + TypeScript project, ESLint, Prettier, Vitest, folder structure, .gitignore (including .env), README, Vite base set to the repository name          | `npm run dev`, `npm test` and `npm run build` pass                        |
 | M1 Content         | Types, zod schemas, themes.json and cards.json files, a loader that keeps only validated cards, 10 sample cards                                                   | Validation tests pass; an invalid card is rejected with a clear message   |
-| M2 Content tools   | Local review screen, speech synthesis helper (and optional audio generation later)                                                                                | 10 cards written and reviewed; rerunning the tools changes nothing        |
+| M2 Content tools   | Local review screen, speech synthesis helper                                                                                                                      | 10 cards written and reviewed; rerunning the tools changes nothing        |
 | M3 Review engine   | Pure functions (introduce, grade, due cards, phrase unlocking, daily counter), no UI                                                                              | Tests cover each interval, the failure case, unlocking and the day change |
 | M4 Storage         | Read and write `frlearn.v1`, version, export and import, handling of a corrupted file                                                                             | Tests pass; importing an export gives back the same progress              |
 | M5 Interface       | Five screens faithful to the look and feel above, `vi.json` file, audio player, CSS variables for colors and fonts                                                | Complete playable flow on a phone: learn, review, find your words         |
@@ -379,7 +374,7 @@ Automated tests protect the logic (review, storage, content validation), and the
 
 - Review engine: each interval, a failure that sends the card back to box 1, phrase unlocking, the daily cap of new cards, the midnight rollover
 - Storage: reading an empty state, version migration, corrupted file, export then identical import
-- Content: a card with a missing required field or a missing audio file makes the build fail
+- Content: a card with a missing required field makes the build fail
 
 **Measuring the success criterion**: the app state keeps the opening dates of the last 30 days (`activity` field), displayed in Settings. "5 days out of 7" can thus be verified by looking at the phone, without collecting any data.
 
@@ -390,7 +385,7 @@ Automated tests protect the logic (review, storage, content validation), and the
 - **Self-assessment**: the learner grades themselves and nothing verifies their pronunciation; this is a V0 choice.
 - **Synthetic voice**: it may sound less natural than a human voice; the most important words could be recorded by a native speaker.
 - **Card identifiers**: an id must never change after publication, because progress is attached to it. A card removed from the content is simply ignored in the progress.
-- **Text-to-speech terms** (if audio files are generated later): check what the provider allows for redistributing the audio files, especially if the app is one day offered to other people.
+- **Voice availability**: pronunciation relies on the French voices installed on the learner's device. Most phones have one, but quality and availability vary by device and browser; the app shows a message when no sound can be played.
 - **Dialect**: Vietnamese tips must target a specific accent (North or South), to be decided (see open decisions).
 
 ## Open decisions and next steps
@@ -400,7 +395,6 @@ Seven decisions are to be made before or during the build; none blocks the start
 | Decision                               | Options                                                          | Recommendation                                                                              | Decide before |
 | -------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------- |
 | Accent targeted by the Vietnamese tips | North, South, neutral                                            | The learner's own accent, which the maintainer can judge by ear                             | M2            |
-| French synthetic voice                 | Three candidate voices                                           | Listen to the three and choose by ear                                                       | M2            |
 | Source of the card content             | Written directly, or generated by a Claude model through the API | Written directly for V0; revisit if content grows                                           | M2            |
 | Direction of review questions          | Production (say the word) from box 3, or recognition only        | Keep production; adjust after use                                                           | M3            |
 | Review intervals                       | 1, 2, 4, 8, 16 days or shorter                                   | Proposed start, to be corrected if too hard                                                 | M3            |
