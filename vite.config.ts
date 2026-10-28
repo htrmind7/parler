@@ -9,7 +9,7 @@ const { version } = JSON.parse(readFileSync('package.json', 'utf-8')) as {
 }
 
 // GitHub Pages serves the site under /<repo-name>/ (use '/' with a custom domain)
-const BASE = '/parle/'
+const BASE = '/parler/'
 
 export default defineConfig({
   base: BASE,
@@ -19,8 +19,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Parlé',
-        short_name: 'Parlé',
+        name: 'Parler',
+        short_name: 'Parler',
         description: 'Học tiếng Pháp từng chút một',
         lang: 'vi',
         display: 'standalone',

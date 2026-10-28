@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "Parlé"
+    "name": "Parler"
   },
   "welcome": {
     "tagline": "Học tiếng Pháp từng chút một, thật tự nhiên",
@@ -9,7 +9,7 @@
     "start": "Bắt đầu"
   },
   "install": {
-    "title": "Thêm Parlé vào màn hình chính",
+    "title": "Thêm Parler vào màn hình chính",
     "iphone": "iPhone: mở bằng Safari, nhấn nút Chia sẻ, chọn “Thêm vào Màn hình chính”, rồi nhấn Thêm. Sau đó hãy mở ứng dụng từ biểu tượng, không mở từ Safari.",
     "android": "Android: mở bằng Chrome, mở menu và chọn “Cài đặt ứng dụng” hoặc “Thêm vào màn hình chính”.",
     "once": "Hãy mở ứng dụng một lần khi có mạng, để dùng được cả khi không có mạng.",

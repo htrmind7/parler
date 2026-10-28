@@ -185,7 +185,7 @@ The intervals are a starting proposal, easy to adjust in a configuration file. T
 
 ## Look and feel
 
-The app reuses the dark style of the reference mockups: night-blue background, rounded cards, coral and teal accents, keeping only what applies to V0. The values below come from the code that generated the mockups. The working name is Parlé, written in spaced coral letters, to be confirmed with the naming decision.
+The app reuses the dark style of the reference mockups: night-blue background, rounded cards, coral and teal accents, keeping only what applies to V0. The values below come from the code that generated the mockups. The app is named Parler, written in spaced coral letters.
 
 **Colors**
 

@@ -130,7 +130,7 @@ export function exportState(state: AppState): string {
 }
 
 export function exportFileName(today: string): string {
-  return `parle-progress-${today}.json`
+  return `parler-progress-${today}.json`
 }
 
 /** Reads an exported file; throws a StorageError with a clear message if it cannot be used. */

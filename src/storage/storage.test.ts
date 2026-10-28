@@ -165,7 +165,7 @@ describe('export and import', () => {
   })
 
   it('names the export file after the day', () => {
-    expect(exportFileName(TODAY)).toBe('parle-progress-2026-11-01.json')
+    expect(exportFileName(TODAY)).toBe('parler-progress-2026-11-01.json')
   })
 
   it('explains why a file cannot be imported', () => {
