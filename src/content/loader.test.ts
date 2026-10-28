@@ -76,7 +76,14 @@ describe('content files', () => {
     expect(() => parseContent(rawThemes, rawCards)).not.toThrow()
   })
 
-  it('contain the 10 sample cards', () => {
-    expect(parseContent(rawThemes, rawCards).cards).toHaveLength(10)
+  it('keep the 10 reviewed sample cards validated', () => {
+    const { cards } = parseContent(rawThemes, rawCards)
+    const validated = cards.filter((card) => card.status === 'validated')
+    expect(validated.length).toBeGreaterThanOrEqual(10)
+  })
+
+  it('publish only validated cards', () => {
+    const { cards } = loadPublishedContent(rawThemes, rawCards)
+    expect(cards.every((card) => card.status === 'validated')).toBe(true)
   })
 })
