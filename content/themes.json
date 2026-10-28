@@ -1,0 +1,42 @@
+[
+  {
+    "id": "greetings",
+    "order": 1,
+    "titleVi": "Chào hỏi và lịch sự",
+    "titleFr": "Salutations et politesse"
+  },
+  {
+    "id": "introductions",
+    "order": 2,
+    "titleVi": "Giới thiệu bản thân",
+    "titleFr": "Se présenter"
+  },
+  {
+    "id": "numbers",
+    "order": 3,
+    "titleVi": "Số và giá cả",
+    "titleFr": "Nombres et prix"
+  },
+  {
+    "id": "food",
+    "order": 4,
+    "titleVi": "Đồ ăn và thức uống",
+    "titleFr": "Nourriture et boissons"
+  },
+  { "id": "family", "order": 5, "titleVi": "Gia đình", "titleFr": "Famille" },
+  { "id": "home", "order": 6, "titleVi": "Nhà cửa", "titleFr": "Maison" },
+  {
+    "id": "getting-around",
+    "order": 7,
+    "titleVi": "Di chuyển và địa điểm",
+    "titleFr": "Déplacements et lieux"
+  },
+  { "id": "shopping", "order": 8, "titleVi": "Mua sắm", "titleFr": "Courses" },
+  {
+    "id": "health",
+    "order": 9,
+    "titleVi": "Sức khỏe và khẩn cấp",
+    "titleFr": "Santé et urgence"
+  },
+  { "id": "time", "order": 10, "titleVi": "Thời gian", "titleFr": "Le temps" }
+]
