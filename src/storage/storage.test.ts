@@ -14,6 +14,7 @@ import {
   exportState,
   importState,
   loadState,
+  MIGRATIONS,
   parseState,
   saveState,
   type KeyValueStore,
@@ -46,7 +47,7 @@ describe('loadState', () => {
   it('uses the key frlearn.v1', () => {
     const store = createMemoryStore()
     saveState(store, sampleState())
-    expect(JSON.parse(store.getItem('frlearn.v1') ?? '{}').version).toBe(1)
+    expect(JSON.parse(store.getItem('frlearn.v1') ?? '{}').version).toBe(2)
   })
 
   it('recovers from corrupted JSON and keeps the bad value as a backup', () => {
@@ -83,11 +84,23 @@ describe('loadState', () => {
     void _version
     store.setItem(STORAGE_KEY, JSON.stringify({ ...current, version: 0 }))
     const migrations = {
+      ...MIGRATIONS,
       0: (data: unknown) => ({ ...(data as object), version: 1 }),
     }
     const result = loadState(store, TODAY, migrations)
     expect(result).toEqual({ state: sampleState(), status: 'ok' })
-    expect(JSON.parse(store.getItem(STORAGE_KEY) ?? '{}').version).toBe(1)
+    expect(JSON.parse(store.getItem(STORAGE_KEY) ?? '{}').version).toBe(2)
+  })
+
+  it('upgrades a version 1 save by adding the grammar progress', () => {
+    const store = createMemoryStore()
+    const { grammarDone: _grammar, ...v2 } = sampleState()
+    void _grammar
+    store.setItem(STORAGE_KEY, JSON.stringify({ ...v2, version: 1 }))
+    const result = loadState(store, TODAY)
+    expect(result.status).toBe('ok')
+    expect(result.state).toEqual({ ...sampleState(), grammarDone: [] })
+    expect(JSON.parse(store.getItem(STORAGE_KEY) ?? '{}').version).toBe(2)
   })
 })
 
@@ -106,7 +119,7 @@ describe('saveState', () => {
 
 describe('parseState', () => {
   it('rejects a version from the future', () => {
-    const raw = JSON.stringify({ ...sampleState(), version: 2 })
+    const raw = JSON.stringify({ ...sampleState(), version: 3 })
     expect(() => parseState(raw)).toThrow(/newer version/)
   })
 

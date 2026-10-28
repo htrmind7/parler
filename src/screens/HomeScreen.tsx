@@ -1,5 +1,6 @@
 import {
   currentStreak,
+  lessonStatus,
   restrictToCards,
   themeProgress,
 } from '../app/selectors.ts'
@@ -8,13 +9,20 @@ import { dueCards, nextNewCards, remainingNewToday } from '../engine/engine.ts'
 import { format } from '../i18n/format.ts'
 import vi from '../i18n/vi.json'
 import { Button } from '../ui/Button.tsx'
-import { CheckIcon, FlameIcon, LockIcon, ReviewIcon } from '../ui/Icons.tsx'
+import {
+  BookIcon,
+  CheckIcon,
+  FlameIcon,
+  LockIcon,
+  ReviewIcon,
+} from '../ui/Icons.tsx'
 import { ProgressBar } from '../ui/ProgressBar.tsx'
 import { ProgressRing } from '../ui/ProgressRing.tsx'
 import { THEME_TONES, ThemeIcon } from '../ui/ThemeIcon.tsx'
 
 export function HomeScreen({
   content,
+  lessons,
   state,
   today,
   go,
@@ -27,6 +35,13 @@ export function HomeScreen({
   const goal = state.settings.newPerDay
   const doneToday = goal - remaining
   const streak = currentStreak(state.activity, today)
+  const nextLesson = lessons.find(
+    (lesson) =>
+      lessonStatus(lesson, state, content.cards).status === 'available',
+  )
+  const allLessonsDone =
+    lessons.length > 0 &&
+    lessons.every((lesson) => state.grammarDone.includes(lesson.id))
 
   return (
     <div className="screen">
@@ -78,6 +93,26 @@ export function HomeScreen({
             : vi.home.nothingDue}
         </p>
       </section>
+
+      <button
+        type="button"
+        className="grammar-card"
+        onClick={() => go('grammar')}
+      >
+        <span className="lesson-badge">
+          <BookIcon size={22} />
+        </span>
+        <span className="lesson-text">
+          <span className="lesson-title">{vi.home.grammarTitle}</span>
+          <span className="muted">
+            {nextLesson
+              ? format(vi.home.grammarNext, { title: nextLesson.titleVi })
+              : allLessonsDone
+                ? vi.home.grammarAllDone
+                : vi.home.grammarNone}
+          </span>
+        </span>
+      </button>
 
       <h2 className="section-title">{vi.home.chooseTheme}</h2>
       <ul className="theme-grid">
@@ -136,6 +171,27 @@ export function HomeScreen({
           },
         )}
       </ul>
+
+      <section className="roadmap">
+        <h2 className="section-title">{vi.home.roadmapTitle}</h2>
+        <p className="muted">{vi.home.roadmapGoal}</p>
+        <ol className="levels">
+          <li className="level level-now">
+            <span className="level-name">{vi.home.levelA1}</span>
+            <span className="chip chip-now">{vi.home.levelNow}</span>
+          </li>
+          <li className="level level-soon" aria-disabled="true">
+            <LockIcon size={18} />
+            <span className="level-name">{vi.home.levelA2}</span>
+            <span className="chip">{vi.home.levelSoon}</span>
+          </li>
+          <li className="level level-soon" aria-disabled="true">
+            <LockIcon size={18} />
+            <span className="level-name">{vi.home.levelB1}</span>
+            <span className="chip">{vi.home.levelSoon}</span>
+          </li>
+        </ol>
+      </section>
     </div>
   )
 }

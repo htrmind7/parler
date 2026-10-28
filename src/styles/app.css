@@ -972,3 +972,166 @@
     transition: none !important;
   }
 }
+
+/* ---------- Grammar and roadmap ---------- */
+.grammar-card,
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.grammar-card:active,
+.lesson-row:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.lesson-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--purple) 20%, transparent);
+  color: var(--purple);
+}
+
+.lesson-done .lesson-badge {
+  background: color-mix(in srgb, var(--green) 22%, transparent);
+  color: var(--green-ink);
+}
+
+.lesson-locked {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.lesson-locked .lesson-badge {
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.lesson-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.lesson-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.lesson-list {
+  list-style: none;
+}
+
+.chip-lesson {
+  background: color-mix(in srgb, var(--purple) 20%, transparent);
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.lesson-fr {
+  margin: 4px 0 8px;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.back-link {
+  align-self: flex-start;
+  padding: 0;
+}
+
+.lesson-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lesson-body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.lesson-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lesson-examples li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px 10px 10px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 16px;
+  background: var(--card);
+}
+
+.lesson-examples li > span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.level {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+}
+
+.level-name {
+  flex: 1;
+  font-weight: 700;
+}
+
+.level-soon {
+  border-style: dashed;
+  background: transparent;
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+.chip-now {
+  background: color-mix(in srgb, var(--green) 20%, transparent);
+  color: var(--green-ink);
+  font-weight: 700;
+}

@@ -1,0 +1,921 @@
+[
+  {
+    "id": "pronoms-etre",
+    "order": 1,
+    "titleVi": "Đại từ và động từ « être »",
+    "titleFr": "Les pronoms et le verbe être",
+    "summaryVi": "Nói “tôi là…”, “bạn ở…”, “chúng tôi là…”.",
+    "unlockAfterCards": 15,
+    "sections": [
+      {
+        "headingVi": "Đại từ nhân xưng",
+        "bodyVi": "Trong tiếng Pháp, trước động từ luôn có một đại từ: je (tôi), tu (bạn, thân mật), il / elle (anh ấy / chị ấy), nous (chúng tôi, chúng ta), vous (bạn lịch sự, hoặc các bạn), ils / elles (họ).\n\nVới người lạ, người lớn tuổi hoặc ở nơi làm việc, hãy dùng « vous » thay vì « tu ». « Tu » chỉ dùng với bạn bè và người nhà.",
+        "examples": [
+          {
+            "fr": "Je suis Anna.",
+            "vi": "Tôi là Anna."
+          },
+          {
+            "fr": "Tu es mon ami.",
+            "vi": "Cậu là bạn tôi."
+          },
+          {
+            "fr": "Vous êtes madame Martin ?",
+            "vi": "Bà là bà Martin phải không ạ?"
+          }
+        ]
+      },
+      {
+        "headingVi": "Chia động từ « être » ở hiện tại",
+        "bodyVi": "« être » nghĩa là “là, thì, ở”. Đây là động từ quan trọng nhất, bạn sẽ gặp nó trong hầu hết các câu. Hãy nghe và nhắc lại từng dạng.",
+        "examples": [
+          {
+            "fr": "je suis",
+            "vi": "tôi là, tôi ở"
+          },
+          {
+            "fr": "tu es",
+            "vi": "bạn là, bạn ở"
+          },
+          {
+            "fr": "il est / elle est",
+            "vi": "anh ấy / chị ấy là, ở"
+          },
+          {
+            "fr": "nous sommes",
+            "vi": "chúng tôi là, ở"
+          },
+          {
+            "fr": "vous êtes",
+            "vi": "bạn (lịch sự) là, ở"
+          },
+          {
+            "fr": "ils sont / elles sont",
+            "vi": "họ là, họ ở"
+          }
+        ]
+      },
+      {
+        "headingVi": "Dùng để làm gì?",
+        "bodyVi": "Dùng « être » để nói tên, nghề nghiệp, quốc tịch, tính chất và nơi chốn. Khác tiếng Việt, trước tính từ luôn cần động từ: “Cà phê nóng” phải nói “Le café est chaud”.",
+        "examples": [
+          {
+            "fr": "Je suis étudiant.",
+            "vi": "Tôi là sinh viên."
+          },
+          {
+            "fr": "Le café est chaud.",
+            "vi": "Cà phê nóng."
+          },
+          {
+            "fr": "Nous sommes à la maison.",
+            "vi": "Chúng tôi ở nhà."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "avoir",
+    "order": 2,
+    "titleVi": "Động từ « avoir » (có)",
+    "titleFr": "Le verbe avoir",
+    "summaryVi": "Nói “tôi có…”, tuổi tác, đói, khát, đau.",
+    "unlockAfterCards": 30,
+    "sections": [
+      {
+        "headingVi": "Chia động từ « avoir »",
+        "bodyVi": "« avoir » nghĩa là “có”. Chữ « je » đổi thành « j' » khi đứng trước « ai ».",
+        "examples": [
+          {
+            "fr": "j'ai",
+            "vi": "tôi có"
+          },
+          {
+            "fr": "tu as",
+            "vi": "bạn có"
+          },
+          {
+            "fr": "il a / elle a",
+            "vi": "anh ấy / chị ấy có"
+          },
+          {
+            "fr": "nous avons",
+            "vi": "chúng tôi có"
+          },
+          {
+            "fr": "vous avez",
+            "vi": "bạn (lịch sự) có"
+          },
+          {
+            "fr": "ils ont / elles ont",
+            "vi": "họ có"
+          }
+        ]
+      },
+      {
+        "headingVi": "Điều khác với tiếng Việt",
+        "bodyVi": "Tiếng Pháp dùng « avoir » (có) để nói tuổi và cảm giác. “Tôi đói” là « j'ai faim », nghĩa đen là “tôi có cái đói”. Đừng dùng « être » trong những câu này.",
+        "examples": [
+          {
+            "fr": "J'ai trente ans.",
+            "vi": "Tôi ba mươi tuổi."
+          },
+          {
+            "fr": "J'ai faim.",
+            "vi": "Tôi đói."
+          },
+          {
+            "fr": "J'ai soif.",
+            "vi": "Tôi khát."
+          },
+          {
+            "fr": "J'ai mal à la tête.",
+            "vi": "Tôi bị đau đầu."
+          }
+        ]
+      },
+      {
+        "headingVi": "Nói về sở hữu",
+        "bodyVi": "Cấu trúc đơn giản và giống tiếng Việt: chủ ngữ + avoir + thứ bạn có.",
+        "examples": [
+          {
+            "fr": "J'ai un frère.",
+            "vi": "Tôi có một người anh (em) trai."
+          },
+          {
+            "fr": "Vous avez de la monnaie ?",
+            "vi": "Bạn có tiền lẻ không?"
+          },
+          {
+            "fr": "Ils ont une voiture.",
+            "vi": "Họ có một chiếc ô tô."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "articles",
+    "order": 3,
+    "titleVi": "Giống của danh từ và mạo từ",
+    "titleFr": "Le genre et les articles",
+    "summaryVi": "Vì sao có « le », « la », « un », « une ».",
+    "unlockAfterCards": 45,
+    "sections": [
+      {
+        "headingVi": "Giống đực và giống cái",
+        "bodyVi": "Mọi danh từ tiếng Pháp đều có giống: giống đực (masculin) hoặc giống cái (féminin). Tiếng Việt không có điều này, nên cách tốt nhất là học danh từ cùng với mạo từ: « un café », « une table ». Đừng cố đoán giống, hãy nghe và nhớ cả cụm.",
+        "examples": []
+      },
+      {
+        "headingVi": "Mạo từ xác định: le, la, l', les",
+        "bodyVi": "Dùng khi nói về một vật đã biết rõ, giống như “cái ấy, những cái ấy”. « le » cho giống đực, « la » cho giống cái, « l' » trước nguyên âm hoặc chữ h câm, « les » cho số nhiều.",
+        "examples": [
+          {
+            "fr": "le pain",
+            "vi": "cái bánh mì (đã biết)"
+          },
+          {
+            "fr": "la porte",
+            "vi": "cái cửa"
+          },
+          {
+            "fr": "l'eau",
+            "vi": "nước"
+          },
+          {
+            "fr": "les légumes",
+            "vi": "các loại rau"
+          }
+        ]
+      },
+      {
+        "headingVi": "Mạo từ bất định: un, une, des",
+        "bodyVi": "Dùng khi nói “một” vật chưa biết rõ. « un » cho giống đực, « une » cho giống cái, « des » cho số nhiều.",
+        "examples": [
+          {
+            "fr": "un café",
+            "vi": "một ly cà phê"
+          },
+          {
+            "fr": "une pomme",
+            "vi": "một quả táo"
+          },
+          {
+            "fr": "des œufs",
+            "vi": "vài quả trứng"
+          }
+        ]
+      },
+      {
+        "headingVi": "Một ít: du, de la, de l'",
+        "bodyVi": "Với thứ không đếm được (nước, bánh mì, súp), dùng « du » (đực), « de la » (cái), « de l' » (trước nguyên âm) để nói “một ít”.",
+        "examples": [
+          {
+            "fr": "Je mange du pain.",
+            "vi": "Tôi ăn (một ít) bánh mì."
+          },
+          {
+            "fr": "Je prends de la soupe.",
+            "vi": "Tôi dùng (một ít) súp."
+          },
+          {
+            "fr": "Je bois de l'eau.",
+            "vi": "Tôi uống (một ít) nước."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pluriel-adjectifs",
+    "order": 4,
+    "titleVi": "Số nhiều và tính từ",
+    "titleFr": "Le pluriel et les adjectifs",
+    "summaryVi": "Thêm « s », « e » và vị trí của tính từ.",
+    "unlockAfterCards": 65,
+    "sections": [
+      {
+        "headingVi": "Số nhiều của danh từ",
+        "bodyVi": "Thông thường chỉ cần thêm « s », nhưng chữ « s » này không đọc. Bạn chỉ nghe được sự khác biệt qua mạo từ: « le sac » và « les sacs » đọc khác nhau ở « le / les ». Danh từ tận cùng « -eau » thêm « x »: un gâteau, des gâteaux.",
+        "examples": [
+          {
+            "fr": "un sac, des sacs",
+            "vi": "một cái túi, vài cái túi"
+          },
+          {
+            "fr": "un gâteau, des gâteaux",
+            "vi": "một cái bánh, vài cái bánh"
+          },
+          {
+            "fr": "une pomme, des pommes",
+            "vi": "một quả táo, vài quả táo"
+          }
+        ]
+      },
+      {
+        "headingVi": "Tính từ phải “hòa hợp”",
+        "bodyVi": "Tính từ thay đổi theo giống và số của danh từ. Giống cái thường thêm « e »: grand → grande. Số nhiều thêm « s ». Với một số tính từ, thêm « e » làm âm cuối được đọc ra: petit (pơ-ti) → petite (pơ-tit).",
+        "examples": [
+          {
+            "fr": "Il est content. Elle est contente.",
+            "vi": "Anh ấy vui. Chị ấy vui."
+          },
+          {
+            "fr": "un petit sac, une petite table",
+            "vi": "một cái túi nhỏ, một cái bàn nhỏ"
+          },
+          {
+            "fr": "des sacs rouges",
+            "vi": "những cái túi màu đỏ"
+          }
+        ]
+      },
+      {
+        "headingVi": "Vị trí của tính từ",
+        "bodyVi": "Đa số tính từ đứng sau danh từ, giống tiếng Việt: « un sac rouge » (cái túi đỏ). Chỉ một vài tính từ ngắn đứng trước: grand, petit, bon, beau, joli, nouveau, vieux, jeune.",
+        "examples": [
+          {
+            "fr": "une robe rouge",
+            "vi": "một chiếc váy màu đỏ"
+          },
+          {
+            "fr": "un bon café",
+            "vi": "một ly cà phê ngon"
+          },
+          {
+            "fr": "une belle maison",
+            "vi": "một ngôi nhà đẹp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "negation",
+    "order": 5,
+    "titleVi": "Câu phủ định",
+    "titleFr": "La négation",
+    "summaryVi": "Cách nói “không” với ne … pas.",
+    "unlockAfterCards": 85,
+    "sections": [
+      {
+        "headingVi": "ne … pas",
+        "bodyVi": "Để phủ định, đặt « ne » trước động từ và « pas » sau động từ. Động từ nằm “kẹp” giữa hai từ này. Trước nguyên âm, « ne » thành « n' ».",
+        "examples": [
+          {
+            "fr": "Je ne parle pas bien français.",
+            "vi": "Tôi nói tiếng Pháp chưa tốt."
+          },
+          {
+            "fr": "Je ne comprends pas.",
+            "vi": "Tôi không hiểu."
+          },
+          {
+            "fr": "Je n'ai pas faim.",
+            "vi": "Tôi không đói."
+          }
+        ]
+      },
+      {
+        "headingVi": "pas de",
+        "bodyVi": "Sau phủ định, « un / une / du / de la / des » thường đổi thành « de » (hoặc « d' » trước nguyên âm): “Tôi không có anh em trai” là « Je n'ai pas de frère ».",
+        "examples": [
+          {
+            "fr": "Je n'ai pas de frère.",
+            "vi": "Tôi không có anh (em) trai."
+          },
+          {
+            "fr": "Il n'y a pas de lait.",
+            "vi": "Không có sữa."
+          },
+          {
+            "fr": "Je ne mange pas de viande.",
+            "vi": "Tôi không ăn thịt."
+          }
+        ]
+      },
+      {
+        "headingVi": "jamais, rien",
+        "bodyVi": "Cũng đặt quanh động từ như « pas »: ne … jamais (không bao giờ), ne … rien (không gì cả). Trong lời nói nhanh, người Pháp thường bỏ « ne », nhưng khi viết (và khi thi) hãy luôn viết đủ.",
+        "examples": [
+          {
+            "fr": "Je ne mange jamais de viande.",
+            "vi": "Tôi không bao giờ ăn thịt."
+          },
+          {
+            "fr": "Je n'ai rien.",
+            "vi": "Tôi không có gì."
+          },
+          {
+            "fr": "Elle ne travaille pas aujourd'hui.",
+            "vi": "Hôm nay chị ấy không làm việc."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "questions",
+    "order": 6,
+    "titleVi": "Đặt câu hỏi",
+    "titleFr": "Poser des questions",
+    "summaryVi": "Ba cách hỏi và các từ để hỏi quan trọng.",
+    "unlockAfterCards": 105,
+    "sections": [
+      {
+        "headingVi": "Ba cách đặt câu hỏi",
+        "bodyVi": "1. Lên giọng ở cuối câu (thân mật, dễ nhất). 2. Thêm « Est-ce que » ở đầu câu (dùng được mọi nơi). 3. Đảo động từ lên trước đại từ (trang trọng, hay gặp khi viết).\n\nBạn hãy bắt đầu với cách thứ nhất và thứ hai.",
+        "examples": [
+          {
+            "fr": "Vous parlez français ?",
+            "vi": "Bạn nói tiếng Pháp à? (lên giọng)"
+          },
+          {
+            "fr": "Est-ce que vous parlez français ?",
+            "vi": "Bạn có nói tiếng Pháp không?"
+          },
+          {
+            "fr": "Parlez-vous français ?",
+            "vi": "Bạn có nói tiếng Pháp không? (trang trọng)"
+          }
+        ]
+      },
+      {
+        "headingVi": "Từ để hỏi",
+        "bodyVi": "où (ở đâu), quand (khi nào), comment (như thế nào), pourquoi (tại sao), combien (bao nhiêu), qui (ai), que / quoi (gì), quel / quelle (nào). Thường đặt từ để hỏi ở đầu câu.",
+        "examples": [
+          {
+            "fr": "Où est la gare ?",
+            "vi": "Nhà ga ở đâu?"
+          },
+          {
+            "fr": "Quand part le train ?",
+            "vi": "Khi nào tàu khởi hành?"
+          },
+          {
+            "fr": "Comment ça va ?",
+            "vi": "Bạn khỏe không?"
+          },
+          {
+            "fr": "Combien ça coûte ?",
+            "vi": "Cái này giá bao nhiêu?"
+          },
+          {
+            "fr": "Qu'est-ce que c'est ?",
+            "vi": "Đây là cái gì?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "verbes-er",
+    "order": 7,
+    "titleVi": "Động từ nhóm -er ở hiện tại",
+    "titleFr": "Les verbes en -er",
+    "summaryVi": "Một quy tắc dùng cho phần lớn các động từ.",
+    "unlockAfterCards": 130,
+    "sections": [
+      {
+        "headingVi": "Quy tắc chung",
+        "bodyVi": "Phần lớn động từ tiếng Pháp kết thúc bằng « -er » (parler, habiter, travailler, manger, aimer…). Bỏ « -er » rồi thêm đuôi: -e, -es, -e, -ons, -ez, -ent.",
+        "examples": [
+          {
+            "fr": "je parle",
+            "vi": "tôi nói"
+          },
+          {
+            "fr": "tu parles",
+            "vi": "bạn nói"
+          },
+          {
+            "fr": "il / elle parle",
+            "vi": "anh ấy / chị ấy nói"
+          },
+          {
+            "fr": "nous parlons",
+            "vi": "chúng tôi nói"
+          },
+          {
+            "fr": "vous parlez",
+            "vi": "bạn (lịch sự) nói"
+          },
+          {
+            "fr": "ils / elles parlent",
+            "vi": "họ nói"
+          }
+        ]
+      },
+      {
+        "headingVi": "Cách đọc",
+        "bodyVi": "Các dạng « je parle, tu parles, il parle, ils parlent » đều đọc giống hệt nhau (“par-lơ”). Chỉ có « nous parlons » và « vous parlez » đọc khác. Nhờ vậy bạn chỉ phải nhớ ít cách đọc hơn bạn tưởng.",
+        "examples": [
+          {
+            "fr": "Je parle français.",
+            "vi": "Tôi nói tiếng Pháp."
+          },
+          {
+            "fr": "Nous habitons à Paris.",
+            "vi": "Chúng tôi sống ở Paris."
+          },
+          {
+            "fr": "Elle travaille le matin.",
+            "vi": "Chị ấy làm việc buổi sáng."
+          },
+          {
+            "fr": "Ils mangent du riz.",
+            "vi": "Họ ăn cơm."
+          }
+        ]
+      },
+      {
+        "headingVi": "Lưu ý nhỏ",
+        "bodyVi": "Trước nguyên âm hoặc chữ h câm, « je » thành « j' »: j'habite, j'aime. Với « manger », nous mangeons (thêm « e » để giữ âm “giơ”).",
+        "examples": [
+          {
+            "fr": "J'habite à Paris.",
+            "vi": "Tôi sống ở Paris."
+          },
+          {
+            "fr": "J'aime le café.",
+            "vi": "Tôi thích cà phê."
+          },
+          {
+            "fr": "Nous mangeons à midi.",
+            "vi": "Chúng tôi ăn lúc trưa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "possessifs",
+    "order": 8,
+    "titleVi": "Từ sở hữu: mon, ma, mes…",
+    "titleFr": "Les possessifs",
+    "summaryVi": "“Của tôi”, “của bạn”, “của họ”.",
+    "unlockAfterCards": 155,
+    "sections": [
+      {
+        "headingVi": "Theo danh từ, không theo người sở hữu",
+        "bodyVi": "Khác tiếng Việt, từ sở hữu hòa hợp với danh từ đứng sau nó (giống và số), chứ không theo người sở hữu. Với “của tôi”: mon (đực), ma (cái), mes (số nhiều).",
+        "examples": [
+          {
+            "fr": "mon père",
+            "vi": "bố tôi"
+          },
+          {
+            "fr": "ma mère",
+            "vi": "mẹ tôi"
+          },
+          {
+            "fr": "mes parents",
+            "vi": "bố mẹ tôi"
+          }
+        ]
+      },
+      {
+        "headingVi": "Các dạng khác",
+        "bodyVi": "ton / ta / tes (của bạn, thân mật) · son / sa / ses (của anh ấy, của chị ấy) · notre / nos (của chúng tôi) · votre / vos (của bạn lịch sự, của các bạn) · leur / leurs (của họ).",
+        "examples": [
+          {
+            "fr": "ton frère, ta sœur",
+            "vi": "anh (em) trai của bạn, chị (em) gái của bạn"
+          },
+          {
+            "fr": "son mari, sa femme",
+            "vi": "chồng của chị ấy, vợ của anh ấy"
+          },
+          {
+            "fr": "notre maison",
+            "vi": "nhà của chúng tôi"
+          },
+          {
+            "fr": "votre nom, s'il vous plaît",
+            "vi": "cho tôi xin họ tên của bạn"
+          }
+        ]
+      },
+      {
+        "headingVi": "Trước nguyên âm",
+        "bodyVi": "Trước danh từ giống cái bắt đầu bằng nguyên âm, dùng « mon / ton / son » để dễ đọc: « mon amie » (bạn gái của tôi), không phải « ma amie ».",
+        "examples": [
+          {
+            "fr": "mon adresse",
+            "vi": "địa chỉ của tôi"
+          },
+          {
+            "fr": "mon amie",
+            "vi": "bạn (nữ) của tôi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a-de",
+    "order": 9,
+    "titleVi": "Giới từ à, de và dạng rút gọn",
+    "titleFr": "À, de, au, du",
+    "summaryVi": "Đi đến, đến từ, của ai.",
+    "unlockAfterCards": 180,
+    "sections": [
+      {
+        "headingVi": "à: ở, đến",
+        "bodyVi": "« à » chỉ nơi chốn (ở, đến) hoặc thời điểm. Khi đứng trước « le » thì thành « au »; trước « les » thành « aux »; trước « la » và « l' » giữ nguyên « à ».",
+        "examples": [
+          {
+            "fr": "Je vais au marché.",
+            "vi": "Tôi đi chợ."
+          },
+          {
+            "fr": "Je vais à la gare.",
+            "vi": "Tôi đi đến ga."
+          },
+          {
+            "fr": "Je suis à l'école.",
+            "vi": "Tôi ở trường."
+          },
+          {
+            "fr": "Rendez-vous à huit heures.",
+            "vi": "Hẹn lúc tám giờ."
+          }
+        ]
+      },
+      {
+        "headingVi": "de: từ, của",
+        "bodyVi": "« de » chỉ nguồn gốc hoặc sở hữu. « de + le » thành « du »; « de + les » thành « des »; « de la » và « de l' » giữ nguyên.",
+        "examples": [
+          {
+            "fr": "Je viens du Vietnam.",
+            "vi": "Tôi đến từ Việt Nam."
+          },
+          {
+            "fr": "Le sac de ma mère.",
+            "vi": "Cái túi của mẹ tôi."
+          },
+          {
+            "fr": "Un verre d'eau.",
+            "vi": "Một ly nước."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "modaux",
+    "order": 10,
+    "titleVi": "vouloir, pouvoir, devoir",
+    "titleFr": "Les verbes modaux",
+    "summaryVi": "Muốn, có thể, phải: cùng với một động từ khác.",
+    "unlockAfterCards": 210,
+    "sections": [
+      {
+        "headingVi": "Ba động từ rất hữu ích",
+        "bodyVi": "Ba động từ này đi với một động từ nguyên mẫu (không chia): vouloir (muốn), pouvoir (có thể, được phép), devoir (phải). Hãy nghe cách chia ở ngôi « je » và « vous » trước.",
+        "examples": [
+          {
+            "fr": "je veux / vous voulez",
+            "vi": "tôi muốn / bạn muốn"
+          },
+          {
+            "fr": "je peux / vous pouvez",
+            "vi": "tôi có thể / bạn có thể"
+          },
+          {
+            "fr": "je dois / vous devez",
+            "vi": "tôi phải / bạn phải"
+          }
+        ]
+      },
+      {
+        "headingVi": "Cách nói lịch sự",
+        "bodyVi": "Khi gọi món hay nhờ giúp đỡ, nói « je voudrais » (tôi muốn / tôi xin) nhẹ nhàng và lịch sự hơn « je veux ».",
+        "examples": [
+          {
+            "fr": "Je voudrais un café, s'il vous plaît.",
+            "vi": "Cho tôi một ly cà phê."
+          },
+          {
+            "fr": "Je peux payer par carte ?",
+            "vi": "Tôi có thể trả bằng thẻ không?"
+          },
+          {
+            "fr": "Vous pouvez répéter ?",
+            "vi": "Bạn có thể nhắc lại không?"
+          },
+          {
+            "fr": "Je dois partir.",
+            "vi": "Tôi phải đi rồi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "il-y-a-il-faut",
+    "order": 11,
+    "titleVi": "Il y a, il faut, c'est",
+    "titleFr": "Il y a, il faut, c'est",
+    "summaryVi": "Ba cụm rất hay gặp trong đời sống.",
+    "unlockAfterCards": 240,
+    "sections": [
+      {
+        "headingVi": "Il y a: có (tồn tại)",
+        "bodyVi": "« Il y a » dùng để nói có một thứ gì đó ở một nơi. Không đổi theo số: « il y a un restaurant », « il y a deux restaurants ». Phủ định: « il n'y a pas de… ».",
+        "examples": [
+          {
+            "fr": "Il y a un restaurant ici.",
+            "vi": "Ở đây có một nhà hàng."
+          },
+          {
+            "fr": "Il y a deux chambres.",
+            "vi": "Có hai phòng ngủ."
+          },
+          {
+            "fr": "Il n'y a pas de lait.",
+            "vi": "Không có sữa."
+          }
+        ]
+      },
+      {
+        "headingVi": "Il faut: cần phải",
+        "bodyVi": "« Il faut » + động từ nguyên mẫu hoặc danh từ nghĩa là “cần, phải”. Không có chủ ngữ thật, và không chia theo người.",
+        "examples": [
+          {
+            "fr": "Il faut payer.",
+            "vi": "Phải thanh toán."
+          },
+          {
+            "fr": "Il faut du temps.",
+            "vi": "Cần có thời gian."
+          },
+          {
+            "fr": "Il faut aller à la préfecture.",
+            "vi": "Phải đến préfecture."
+          }
+        ]
+      },
+      {
+        "headingVi": "C'est: đây là, đó là",
+        "bodyVi": "« C'est » dùng để giới thiệu hoặc nhận xét: « C'est + danh từ có mạo từ » hoặc « C'est + tính từ ». Số nhiều là « ce sont » hoặc nói đơn giản « c'est ».",
+        "examples": [
+          {
+            "fr": "C'est ma mère.",
+            "vi": "Đây là mẹ tôi."
+          },
+          {
+            "fr": "C'est un café.",
+            "vi": "Đó là một ly cà phê."
+          },
+          {
+            "fr": "C'est cher.",
+            "vi": "Đắt quá."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "futur-proche",
+    "order": 12,
+    "titleVi": "Tương lai gần",
+    "titleFr": "Le futur proche",
+    "summaryVi": "Nói về điều sắp xảy ra: aller + động từ.",
+    "unlockAfterCards": 270,
+    "sections": [
+      {
+        "headingVi": "Cấu trúc",
+        "bodyVi": "Chia động từ « aller » (đi) ở hiện tại, rồi thêm một động từ nguyên mẫu. Nghĩa là “sắp, sẽ”. Rất giống tiếng Việt: “tôi sắp ăn”.",
+        "examples": [
+          {
+            "fr": "je vais",
+            "vi": "tôi sẽ / tôi đi"
+          },
+          {
+            "fr": "tu vas",
+            "vi": "bạn sẽ"
+          },
+          {
+            "fr": "il / elle va",
+            "vi": "anh ấy / chị ấy sẽ"
+          },
+          {
+            "fr": "nous allons",
+            "vi": "chúng tôi sẽ"
+          },
+          {
+            "fr": "vous allez",
+            "vi": "bạn (lịch sự) sẽ"
+          },
+          {
+            "fr": "ils / elles vont",
+            "vi": "họ sẽ"
+          }
+        ]
+      },
+      {
+        "headingVi": "Ví dụ",
+        "bodyVi": "Chỉ cần chia « aller » theo chủ ngữ, còn động từ phía sau giữ nguyên ở dạng nguyên mẫu.",
+        "examples": [
+          {
+            "fr": "Je vais manger.",
+            "vi": "Tôi sắp ăn."
+          },
+          {
+            "fr": "Demain, nous allons travailler.",
+            "vi": "Ngày mai, chúng tôi sẽ làm việc."
+          },
+          {
+            "fr": "Tu vas venir ?",
+            "vi": "Bạn sẽ đến chứ?"
+          },
+          {
+            "fr": "Il va pleuvoir.",
+            "vi": "Trời sắp mưa."
+          }
+        ]
+      },
+      {
+        "headingVi": "Phủ định",
+        "bodyVi": "Đặt « ne … pas » quanh « aller », không phải quanh động từ nguyên mẫu.",
+        "examples": [
+          {
+            "fr": "Je ne vais pas payer.",
+            "vi": "Tôi sẽ không trả tiền."
+          },
+          {
+            "fr": "Nous n'allons pas partir.",
+            "vi": "Chúng tôi sẽ không đi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "passe-compose-avoir",
+    "order": 13,
+    "titleVi": "Quá khứ: passé composé với « avoir »",
+    "titleFr": "Le passé composé avec avoir",
+    "summaryVi": "Nói “hôm qua tôi đã ăn…”.",
+    "unlockAfterCards": 300,
+    "sections": [
+      {
+        "headingVi": "Cấu trúc",
+        "bodyVi": "Passé composé = « avoir » ở hiện tại + phân từ quá khứ. Với động từ nhóm -er, đổi « -er » thành « -é »: parler → parlé, manger → mangé, travailler → travaillé.",
+        "examples": [
+          {
+            "fr": "J'ai parlé.",
+            "vi": "Tôi đã nói."
+          },
+          {
+            "fr": "Tu as mangé ?",
+            "vi": "Bạn đã ăn chưa?"
+          },
+          {
+            "fr": "Nous avons travaillé hier.",
+            "vi": "Hôm qua chúng tôi đã làm việc."
+          }
+        ]
+      },
+      {
+        "headingVi": "Phân từ không theo quy tắc",
+        "bodyVi": "Một số động từ quen thuộc có phân từ riêng, bạn nên học thuộc: avoir → eu, être → été, faire → fait, prendre → pris, voir → vu, lire → lu, écrire → écrit.",
+        "examples": [
+          {
+            "fr": "J'ai fait du café.",
+            "vi": "Tôi đã pha cà phê."
+          },
+          {
+            "fr": "Elle a pris le bus.",
+            "vi": "Chị ấy đã đi xe buýt."
+          },
+          {
+            "fr": "Ils ont vu le médecin.",
+            "vi": "Họ đã gặp bác sĩ."
+          }
+        ]
+      },
+      {
+        "headingVi": "Phủ định và dấu hiệu thời gian",
+        "bodyVi": "Phủ định bao quanh « avoir »: « je n'ai pas mangé ». Các từ hay đi kèm: hier (hôm qua), ce matin (sáng nay), déjà (đã, rồi).",
+        "examples": [
+          {
+            "fr": "Je n'ai pas mangé.",
+            "vi": "Tôi chưa ăn."
+          },
+          {
+            "fr": "Hier, j'ai travaillé.",
+            "vi": "Hôm qua tôi đã làm việc."
+          },
+          {
+            "fr": "J'ai déjà payé.",
+            "vi": "Tôi đã trả tiền rồi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "passe-compose-etre",
+    "order": 14,
+    "titleVi": "Quá khứ: passé composé với « être »",
+    "titleFr": "Le passé composé avec être",
+    "summaryVi": "Với động từ chỉ sự di chuyển như aller, venir, partir…",
+    "unlockAfterCards": 330,
+    "sections": [
+      {
+        "headingVi": "Khi nào dùng « être »?",
+        "bodyVi": "Một số động từ chỉ sự di chuyển hoặc thay đổi dùng « être » thay vì « avoir »: aller (đi), venir (đến), partir (rời đi), arriver (đến nơi), rentrer (về), sortir (đi ra), entrer (đi vào), rester (ở lại). Phân từ: allé, venu, parti, arrivé, rentré, sorti, entré, resté.",
+        "examples": [
+          {
+            "fr": "Je suis allé au marché hier.",
+            "vi": "Hôm qua tôi đã đi chợ."
+          },
+          {
+            "fr": "Nous sommes arrivés à midi.",
+            "vi": "Chúng tôi đã đến nơi lúc trưa."
+          },
+          {
+            "fr": "Ils sont partis hier.",
+            "vi": "Họ đã rời đi hôm qua."
+          }
+        ]
+      },
+      {
+        "headingVi": "Hòa hợp giống và số",
+        "bodyVi": "Với « être », phân từ hòa hợp với chủ ngữ: nữ thêm « e », số nhiều thêm « s ». Cách đọc thường không thay đổi, nhưng khi viết phải thêm.",
+        "examples": [
+          {
+            "fr": "Il est venu. Elle est venue.",
+            "vi": "Anh ấy đã đến. Chị ấy đã đến."
+          },
+          {
+            "fr": "Elle est allée à la gare.",
+            "vi": "Chị ấy đã đi đến ga."
+          },
+          {
+            "fr": "Nous sommes restés à la maison.",
+            "vi": "Chúng tôi đã ở nhà."
+          }
+        ]
+      },
+      {
+        "headingVi": "Bước tiếp theo",
+        "bodyVi": "Đây là bước chuyển từ trình độ A1 sang A2. Hãy luyện thật nhiều câu ngắn về hôm qua: bạn đã đi đâu, đã ăn gì, đã gặp ai.",
+        "examples": [
+          {
+            "fr": "Hier, je suis allé à la banque.",
+            "vi": "Hôm qua tôi đã đi đến ngân hàng."
+          },
+          {
+            "fr": "Hier, j'ai pris le bus.",
+            "vi": "Hôm qua tôi đã đi xe buýt."
+          }
+        ]
+      }
+    ]
+  }
+]

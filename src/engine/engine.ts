@@ -27,11 +27,12 @@ export function createInitialState(
   newPerDay: NewPerDay = 5,
 ): AppState {
   return {
-    version: 1,
+    version: 2,
     settings: { newPerDay },
     progress: {},
     today: { date: today, newIntroduced: 0 },
     activity: [],
+    grammarDone: [],
   }
 }
 

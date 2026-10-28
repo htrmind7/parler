@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { addDays } from '../engine/dates.ts'
 import type { AppState } from '../engine/types.ts'
 
-export const CURRENT_VERSION = 1
+export const CURRENT_VERSION = 2
 
 const isoDate = z
   .string()
@@ -38,6 +38,7 @@ export const appStateSchema = z
       newIntroduced: z.number().int().min(0),
     }),
     activity: z.array(isoDate),
+    grammarDone: z.array(z.string().min(1)),
   })
   .refine(
     (state) =>

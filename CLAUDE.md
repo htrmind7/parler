@@ -28,6 +28,11 @@ Decision: no generated mp3 and no Google TTS; the card `audio` field is optional
 No Claude API script: cards are written directly in content/cards.json with status "draft", then reviewed by the user.
 Only "validated" cards are published. Doubts go in `reviewNotes`.
 
+## Content and storage
+
+- ~490 cards in 23 themes cover A1; grammar lessons are in content/grammar.json (14 lessons, unlocked by number of started cards). A2 and B1 are announced on the home screen but not built yet.
+- The progress is stored under the key `frlearn.v1` as an object with `version: 2` (grammarDone was added in version 2). Any format change needs a version bump and a migration in src/storage/storage.ts.
+
 ## Commands
 
 - npm run dev / build / test / lint / format

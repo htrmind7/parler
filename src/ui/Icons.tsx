@@ -113,3 +113,10 @@ export const ArrowLeftIcon = (props: IconProps) => (
     <path d="M19 12H5M11 6l-6 6 6 6" />
   </Svg>
 )
+
+export const BookIcon = (props: IconProps) => (
+  <Svg {...props}>
+    <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z" />
+    <path d="M4 21.5V5.5M8 7h8M8 11h6" />
+  </Svg>
+)

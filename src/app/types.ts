@@ -1,10 +1,13 @@
+import type { Lesson } from '../content/grammar.ts'
 import type { Content } from '../content/loader.ts'
 import type { AppState } from '../engine/types.ts'
 
-export type ScreenName = 'home' | 'learn' | 'review' | 'words' | 'settings'
+export type ScreenName =
+  'home' | 'learn' | 'review' | 'words' | 'grammar' | 'settings'
 
 export type ScreenProps = {
   content: Content
+  lessons: Lesson[]
   state: AppState
   update: (change: (state: AppState) => AppState) => void
   today: string

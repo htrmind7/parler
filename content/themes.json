@@ -23,20 +23,118 @@
     "titleVi": "Đồ ăn và thức uống",
     "titleFr": "Nourriture et boissons"
   },
-  { "id": "family", "order": 5, "titleVi": "Gia đình", "titleFr": "Famille" },
-  { "id": "home", "order": 6, "titleVi": "Nhà cửa", "titleFr": "Maison" },
+  {
+    "id": "family",
+    "order": 5,
+    "titleVi": "Gia đình",
+    "titleFr": "Famille"
+  },
+  {
+    "id": "home",
+    "order": 6,
+    "titleVi": "Nhà cửa",
+    "titleFr": "Maison"
+  },
   {
     "id": "getting-around",
     "order": 7,
     "titleVi": "Di chuyển và địa điểm",
     "titleFr": "Déplacements et lieux"
   },
-  { "id": "shopping", "order": 8, "titleVi": "Mua sắm", "titleFr": "Courses" },
+  {
+    "id": "shopping",
+    "order": 8,
+    "titleVi": "Mua sắm",
+    "titleFr": "Courses"
+  },
   {
     "id": "health",
     "order": 9,
     "titleVi": "Sức khỏe và khẩn cấp",
     "titleFr": "Santé et urgence"
   },
-  { "id": "time", "order": 10, "titleVi": "Thời gian", "titleFr": "Le temps" }
+  {
+    "id": "time",
+    "order": 10,
+    "titleVi": "Thời gian",
+    "titleFr": "Le temps"
+  },
+  {
+    "id": "pronouns",
+    "order": 11,
+    "titleVi": "Đại từ",
+    "titleFr": "Pronoms"
+  },
+  {
+    "id": "verbs",
+    "order": 12,
+    "titleVi": "Động từ thông dụng",
+    "titleFr": "Verbes courants"
+  },
+  {
+    "id": "small-words",
+    "order": 13,
+    "titleVi": "Từ nối và câu hỏi",
+    "titleFr": "Petits mots et questions"
+  },
+  {
+    "id": "adjectives",
+    "order": 14,
+    "titleVi": "Tính từ",
+    "titleFr": "Adjectifs"
+  },
+  {
+    "id": "daily-phrases",
+    "order": 15,
+    "titleVi": "Câu giao tiếp hằng ngày",
+    "titleFr": "Phrases du quotidien"
+  },
+  {
+    "id": "days-months",
+    "order": 16,
+    "titleVi": "Ngày và tháng",
+    "titleFr": "Jours et mois"
+  },
+  {
+    "id": "colors",
+    "order": 17,
+    "titleVi": "Màu sắc",
+    "titleFr": "Couleurs"
+  },
+  {
+    "id": "weather",
+    "order": 18,
+    "titleVi": "Thời tiết",
+    "titleFr": "Météo"
+  },
+  {
+    "id": "clothes",
+    "order": 19,
+    "titleVi": "Quần áo",
+    "titleFr": "Vêtements"
+  },
+  {
+    "id": "body",
+    "order": 20,
+    "titleVi": "Cơ thể",
+    "titleFr": "Corps"
+  },
+  {
+    "id": "work-school",
+    "order": 21,
+    "titleVi": "Công việc và trường học",
+    "titleFr": "Travail et école"
+  },
+  {
+    "id": "places",
+    "order": 22,
+    "titleVi": "Nơi chốn trong thành phố",
+    "titleFr": "Lieux en ville"
+  },
+  {
+    "id": "admin",
+    "order": 23,
+    "titleVi": "Giấy tờ và hành chính",
+    "titleFr": "Papiers et administration"
+  }
 ]

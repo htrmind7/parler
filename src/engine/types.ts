@@ -11,11 +11,12 @@ export type CardProgress = {
 export type NewPerDay = 5 | 10 | 15
 
 export type AppState = {
-  version: 1
+  version: 2
   settings: { newPerDay: NewPerDay }
   progress: Record<string, CardProgress>
   today: { date: string; newIntroduced: number }
   activity: string[] // ISO dates of the days the app was opened (last 30 days)
+  grammarDone: string[] // ids of the grammar lessons marked as understood
 }
 
 export type QuestionDirection = 'fr-to-vi' | 'vi-to-fr'

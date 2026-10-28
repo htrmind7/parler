@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import rawCards from '../content/cards.json'
+import rawGrammar from '../content/grammar.json'
 import rawThemes from '../content/themes.json'
 import {
   applyAppearance,
@@ -9,6 +10,7 @@ import {
 } from './app/appearance.ts'
 import { useAppState } from './app/useAppState.ts'
 import type { ScreenName, ScreenProps } from './app/types.ts'
+import { parseGrammar } from './content/grammar.ts'
 import { loadPublishedContent } from './content/loader.ts'
 import { recordActivity, rollDay } from './engine/engine.ts'
 import { toIsoDate } from './engine/dates.ts'
@@ -18,6 +20,7 @@ import {
   type SpeechProblem,
 } from './audio/speech.ts'
 import vi from './i18n/vi.json'
+import { GrammarScreen } from './screens/GrammarScreen.tsx'
 import { HomeScreen } from './screens/HomeScreen.tsx'
 import { InstallScreen } from './screens/InstallScreen.tsx'
 import { LearnScreen } from './screens/LearnScreen.tsx'
@@ -25,14 +28,16 @@ import { ReviewScreen } from './screens/ReviewScreen.tsx'
 import { SettingsScreen } from './screens/SettingsScreen.tsx'
 import { WelcomeScreen } from './screens/WelcomeScreen.tsx'
 import { WordsScreen } from './screens/WordsScreen.tsx'
-import { GearIcon, HomeIcon, ListIcon } from './ui/Icons.tsx'
+import { BookIcon, GearIcon, HomeIcon, ListIcon } from './ui/Icons.tsx'
 
 // Validated at build time by the content tests; only validated cards are published
 const content = loadPublishedContent(rawThemes, rawCards)
+const lessons = parseGrammar(rawGrammar)
 
 const NAV: { screen: ScreenName; label: string; icon: React.ReactNode }[] = [
   { screen: 'home', label: vi.nav.home, icon: <HomeIcon /> },
   { screen: 'words', label: vi.nav.words, icon: <ListIcon /> },
+  { screen: 'grammar', label: vi.nav.grammar, icon: <BookIcon /> },
   { screen: 'settings', label: vi.nav.settings, icon: <GearIcon /> },
 ]
 
@@ -71,6 +76,7 @@ export default function App() {
   const isFirstLaunch = state.activity.length === 0
   const props: ScreenProps = {
     content,
+    lessons,
     state,
     update,
     today,
@@ -108,6 +114,8 @@ export default function App() {
     body = <ReviewScreen {...props} />
   } else if (screen === 'words') {
     body = <WordsScreen {...props} />
+  } else if (screen === 'grammar') {
+    body = <GrammarScreen {...props} />
   } else if (screen === 'settings') {
     body = (
       <SettingsScreen

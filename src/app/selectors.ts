@@ -75,3 +75,22 @@ export function currentStreak(activity: string[], today: string): number {
   }
   return streak
 }
+
+export type LessonStatus = 'done' | 'available' | 'locked'
+
+/** Grammar opens gradually: a lesson unlocks once enough cards have been started. */
+export function lessonStatus(
+  lesson: { id: string; unlockAfterCards: number },
+  state: AppState,
+  cards: Card[],
+): { status: LessonStatus; cardsMissing: number } {
+  const started = Object.keys(restrictToCards(state, cards).progress).length
+  const cardsMissing = Math.max(0, lesson.unlockAfterCards - started)
+  if (state.grammarDone.includes(lesson.id)) {
+    return { status: 'done', cardsMissing: 0 }
+  }
+  return {
+    status: cardsMissing === 0 ? 'available' : 'locked',
+    cardsMissing,
+  }
+}

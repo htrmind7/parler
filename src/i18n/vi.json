@@ -23,7 +23,8 @@
   "nav": {
     "home": "Trang chủ",
     "words": "Từ của tôi",
-    "settings": "Cài đặt"
+    "settings": "Cài đặt",
+    "grammar": "Ngữ pháp"
   },
   "home": {
     "learnNew": "Học từ mới",
@@ -43,7 +44,18 @@
     "themeNew": "{n} từ mới",
     "themeDone": "Hoàn thành",
     "themeTomorrow": "Hẹn ngày mai",
-    "themeReviewFirst": "Hãy ôn các từ đã học trước"
+    "themeReviewFirst": "Hãy ôn các từ đã học trước",
+    "grammarTitle": "Ngữ pháp",
+    "grammarNext": "Bài tiếp theo: {title}",
+    "grammarAllDone": "Bạn đã hiểu tất cả các bài hiện có. Giỏi lắm!",
+    "grammarNone": "Học thêm vài từ để mở bài ngữ pháp đầu tiên",
+    "roadmapTitle": "Lộ trình của bạn",
+    "roadmapGoal": "Mục tiêu: thẻ cư trú 10 năm (hiện cần trình độ B1)",
+    "levelNow": "Đang học",
+    "levelSoon": "Sắp ra mắt",
+    "levelA1": "A1 · Nhập môn",
+    "levelA2": "A2 · Cơ bản",
+    "levelB1": "B1 · Trung cấp"
   },
   "learn": {
     "title": "Học từ mới",
@@ -111,5 +123,18 @@
     "noSpeech": "Điện thoại này không hỗ trợ đọc tiếng Pháp thành tiếng.",
     "noFrenchVoice": "Thiết bị này chưa có giọng đọc tiếng Pháp. Hãy cài giọng tiếng Pháp trong phần cài đặt của thiết bị.",
     "speechFailed": "Không phát được âm thanh. Hãy kiểm tra âm lượng và chế độ im lặng của thiết bị."
+  },
+  "grammar": {
+    "title": "Ngữ pháp",
+    "intro": "Học từng bài ngắn, có ví dụ và cách đọc. Các bài mở dần khi bạn học thêm từ vựng.",
+    "lessonNumber": "Bài {n}",
+    "locked": "Học thêm {n} từ để mở khóa",
+    "available": "Sẵn sàng",
+    "done": "Đã hiểu",
+    "markDone": "Tôi đã hiểu bài này",
+    "unmark": "Đánh dấu là chưa hiểu",
+    "backToList": "Danh sách bài học",
+    "listen": "Nghe",
+    "examples": "Ví dụ"
   }
 }

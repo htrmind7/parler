@@ -38,6 +38,10 @@ npm run preview
 
 Cards live in `content/cards.json` and themes in `content/themes.json`. Only cards with `"status": "validated"` are published. Review draft cards locally with `npm run review`: it lets you correct, listen to, validate or reject each card. A validated card is never modified by the tool, and a card `id` never changes once published, because the learner's progress is attached to it.
 
+Grammar lessons live in `content/grammar.json` (explanations and examples in Vietnamese). They open gradually, once the learner has started enough cards (`unlockAfterCards`), and each one can be marked as understood.
+
+The roadmap shown on the home screen is A1 (current content), then A2 and B1 (locked, coming soon).
+
 All interface texts are in `src/i18n/vi.json`. Pronunciation uses the browser's speech synthesis (French voice installed on the device).
 
 ## Deployment

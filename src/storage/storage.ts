@@ -19,8 +19,10 @@ export type KeyValueStore = Pick<Storage, 'getItem' | 'setItem' | 'removeItem'>
 /** Upgrades the data of version N to version N + 1. */
 export type Migrations = Record<number, (data: unknown) => unknown>
 
-/** No migration yet: version 1 is the first format. */
-export const MIGRATIONS: Migrations = {}
+export const MIGRATIONS: Migrations = {
+  // Version 2 adds the grammar lessons the learner marked as understood
+  1: (data) => ({ ...(data as object), version: 2, grammarDone: [] }),
+}
 
 export type LoadResult = {
   state: AppState
