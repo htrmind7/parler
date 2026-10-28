@@ -15,7 +15,7 @@ Deployed by .github/workflows/deploy.yml. The repo is private until M7.
 
 Dark theme described in the specs ("Look and feel"). Colors as CSS variables (src/styles/tokens.css), never hardcoded in components.
 Fonts: Be Vietnam Pro (Vietnamese) and Poppins (French, app name), installed via @fontsource and served by the app, no CDN.
-Reference mockups: docs/mockups.pdf.
+Reference mockups: docs/mockups.pdf (local only, git-ignored: it contains personal information, never commit it).
 
 ## Audio (V0 decision)
 

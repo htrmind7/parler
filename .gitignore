@@ -1,3 +1,5 @@
 node_modules/
 dist/
 .env
+# Local-only reference (contains personal information)
+docs/mockups.pdf

@@ -261,7 +261,7 @@ The app reuses the dark style of the reference mockups: night-blue background, r
 }
 ```
 
-**Visual reference**: place the mockups PDF in the repository as `docs/mockups.pdf`, so that Claude Code can consult it during step M5. Clickable HTML mockups of the V0 screens can also be produced from these rules to validate the look before the build.
+**Visual reference**: keep the mockups PDF locally as `docs/mockups.pdf` (git-ignored, because it may contain personal information), so that Claude Code can consult it during step M5. Clickable HTML mockups of the V0 screens can also be produced from these rules to validate the look before the build.
 
 ## Content pipeline
 
