@@ -10,7 +10,7 @@ import {
 import { useAppState } from './app/useAppState.ts'
 import type { ScreenName, ScreenProps } from './app/types.ts'
 import { loadPublishedContent } from './content/loader.ts'
-import { recordActivity } from './engine/engine.ts'
+import { recordActivity, rollDay } from './engine/engine.ts'
 import { toIsoDate } from './engine/dates.ts'
 import {
   isSpeechSupported,
@@ -37,7 +37,7 @@ const NAV: { screen: ScreenName; label: string; icon: React.ReactNode }[] = [
 ]
 
 export default function App() {
-  const today = toIsoDate(new Date())
+  const [today, setToday] = useState(() => toIsoDate(new Date()))
   const { state, update, persistent, recoveredError, saveFailed } =
     useAppState(today)
   const [screen, setScreen] = useState<ScreenName>('home')
@@ -47,6 +47,26 @@ export default function App() {
   const [speechProblem, setSpeechProblem] = useState<SpeechProblem | null>(null)
 
   useEffect(() => onSpeechProblem(setSpeechProblem), [])
+
+  // An installed app can stay open for days: follow the clock when it comes back to the foreground
+  useEffect(() => {
+    const refresh = () => setToday(toIsoDate(new Date()))
+    document.addEventListener('visibilitychange', refresh)
+    window.addEventListener('focus', refresh)
+    const timer = window.setInterval(refresh, 60_000)
+    return () => {
+      document.removeEventListener('visibilitychange', refresh)
+      window.removeEventListener('focus', refresh)
+      window.clearInterval(timer)
+    }
+  }, [])
+
+  // A new day while the app stays open still counts as an active day
+  useEffect(() => {
+    if (state.activity.length > 0 && !state.activity.includes(today)) {
+      update((current) => recordActivity(rollDay(current, today), today))
+    }
+  }, [today, state.activity, update])
 
   const isFirstLaunch = state.activity.length === 0
   const props: ScreenProps = {
