@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { cardSchema, themeSchema, type Card, type Theme } from './schemas'
+import { cardSchema, themeSchema, type Card, type Theme } from './schemas.ts'
 
 export class ContentError extends Error {
   constructor(message: string) {

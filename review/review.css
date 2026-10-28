@@ -1,0 +1,92 @@
+.review {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.review h1 {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+.review .counter {
+  color: var(--text-muted);
+  margin: 0 0 16px;
+}
+
+.review .panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.review .notes {
+  background: var(--card-flipped);
+  border: 1px solid var(--green);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.review label {
+  display: block;
+  margin: 12px 0 4px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.review input,
+.review textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.review .fr {
+  font-family: var(--font-fr);
+}
+
+.review .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.review button {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.review button.primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--bg);
+}
+
+.review button.danger {
+  border-color: var(--coral);
+  color: var(--coral);
+}
+
+.review button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.review .error {
+  color: var(--coral);
+  margin-top: 12px;
+}

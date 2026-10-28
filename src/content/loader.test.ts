@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import rawCards from '../../content/cards.json'
 import rawThemes from '../../content/themes.json'
-import { ContentError, loadPublishedContent, parseContent } from './loader'
+import { ContentError, loadPublishedContent, parseContent } from './loader.ts'
 
 const theme = {
   id: 't1',
