@@ -1,12 +1,14 @@
 import { useRef, useState } from 'react'
 import { lastWeek, weekdayIndex } from '../app/selectors.ts'
 import type { ScreenProps } from '../app/types.ts'
+import { APPEARANCES, type Appearance } from '../app/appearance.ts'
 import { createInitialState } from '../engine/engine.ts'
 import type { NewPerDay } from '../engine/types.ts'
 import { format } from '../i18n/format.ts'
 import vi from '../i18n/vi.json'
 import { exportFileName, exportState, importState } from '../storage/storage.ts'
 import { Button } from '../ui/Button.tsx'
+import { LeafIcon, MoonIcon, SunIcon } from '../ui/Icons.tsx'
 
 const OPTIONS: NewPerDay[] = [5, 10, 15]
 
@@ -21,13 +23,31 @@ function download(fileName: string, text: string): void {
   URL.revokeObjectURL(url)
 }
 
-type SettingsProps = ScreenProps & { onShowInstall: () => void }
+type SettingsProps = ScreenProps & {
+  onShowInstall: () => void
+  appearance: Appearance
+  onAppearanceChange: (appearance: Appearance) => void
+}
+
+const APPEARANCE_LABELS: Record<Appearance, string> = {
+  light: vi.settings.appearanceLight,
+  dark: vi.settings.appearanceDark,
+  mint: vi.settings.appearanceMint,
+}
+
+const APPEARANCE_ICONS: Record<Appearance, React.ReactNode> = {
+  light: <SunIcon size={22} />,
+  dark: <MoonIcon size={22} />,
+  mint: <LeafIcon size={22} />,
+}
 
 export function SettingsScreen({
   state,
   update,
   today,
   onShowInstall,
+  appearance,
+  onAppearanceChange,
 }: SettingsProps) {
   const fileInput = useRef<HTMLInputElement>(null)
   const [message, setMessage] = useState<string | null>(null)
@@ -57,6 +77,22 @@ export function SettingsScreen({
   return (
     <div className="screen">
       <h1 className="screen-title">{vi.settings.title}</h1>
+
+      <h2 className="section-title">{vi.settings.appearance}</h2>
+      <div className="swatches">
+        {APPEARANCES.map((option) => (
+          <button
+            key={option}
+            type="button"
+            className={`swatch swatch-${option} ${appearance === option ? 'swatch-active' : ''}`}
+            aria-pressed={appearance === option}
+            onClick={() => onAppearanceChange(option)}
+          >
+            <span className="swatch-preview">{APPEARANCE_ICONS[option]}</span>
+            <span>{APPEARANCE_LABELS[option]}</span>
+          </button>
+        ))}
+      </div>
 
       <h2 className="section-title">{vi.settings.newPerDay}</h2>
       <div className="pills">

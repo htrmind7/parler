@@ -3,6 +3,7 @@ import { format } from '../i18n/format.ts'
 import vi from '../i18n/vi.json'
 import type { NewPerDay } from '../engine/types.ts'
 import { Button } from '../ui/Button.tsx'
+import { CheckIcon } from '../ui/Icons.tsx'
 
 const OPTIONS: NewPerDay[] = [5, 10, 15]
 
@@ -19,6 +20,14 @@ export function WelcomeScreen({
         🇻🇳 → 🇫🇷
       </p>
       <p className="tagline">{vi.welcome.tagline}</p>
+      <ul className="features">
+        {vi.welcome.features.map((feature) => (
+          <li key={feature}>
+            <CheckIcon size={18} />
+            {feature}
+          </li>
+        ))}
+      </ul>
       <p className="muted">{vi.welcome.perDay}</p>
       <div className="pills">
         {OPTIONS.map((option) => (

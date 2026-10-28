@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react'
 import rawCards from '../content/cards.json'
 import rawThemes from '../content/themes.json'
+import {
+  applyAppearance,
+  loadAppearance,
+  saveAppearance,
+  type Appearance,
+} from './app/appearance.ts'
 import { useAppState } from './app/useAppState.ts'
 import type { ScreenName, ScreenProps } from './app/types.ts'
 import { loadPublishedContent } from './content/loader.ts'
@@ -36,12 +42,31 @@ export default function App() {
     useAppState(today)
   const [screen, setScreen] = useState<ScreenName>('home')
   const [showInstall, setShowInstall] = useState(false)
+  const [learnThemeId, setLearnThemeId] = useState<string | undefined>()
+  const [appearance, setAppearance] = useState<Appearance>(loadAppearance)
   const [speechProblem, setSpeechProblem] = useState<SpeechProblem | null>(null)
 
   useEffect(() => onSpeechProblem(setSpeechProblem), [])
 
   const isFirstLaunch = state.activity.length === 0
-  const props: ScreenProps = { content, state, update, today, go: setScreen }
+  const props: ScreenProps = {
+    content,
+    state,
+    update,
+    today,
+    go: setScreen,
+    learnThemeId,
+    startLearning: (themeId) => {
+      setLearnThemeId(themeId)
+      setScreen('learn')
+    },
+  }
+
+  function changeAppearance(next: Appearance) {
+    setAppearance(next)
+    applyAppearance(next)
+    saveAppearance(next)
+  }
 
   let body: React.ReactNode
   if (showInstall) {
@@ -65,7 +90,12 @@ export default function App() {
     body = <WordsScreen {...props} />
   } else if (screen === 'settings') {
     body = (
-      <SettingsScreen {...props} onShowInstall={() => setShowInstall(true)} />
+      <SettingsScreen
+        {...props}
+        onShowInstall={() => setShowInstall(true)}
+        appearance={appearance}
+        onAppearanceChange={changeAppearance}
+      />
     )
   } else {
     body = <HomeScreen {...props} />

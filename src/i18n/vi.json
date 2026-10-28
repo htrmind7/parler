@@ -6,7 +6,12 @@
     "tagline": "Học tiếng Pháp từng chút một, thật tự nhiên",
     "perDay": "Mỗi ngày bạn muốn học bao nhiêu từ mới?",
     "perDayOption": "{n} từ",
-    "start": "Bắt đầu"
+    "start": "Bắt đầu",
+    "features": [
+      "Nghe phát âm tiếng Pháp",
+      "Ôn tập đúng lúc để nhớ lâu",
+      "Dùng được cả khi không có mạng"
+    ]
   },
   "install": {
     "title": "Thêm Parler vào màn hình chính",
@@ -21,7 +26,7 @@
     "settings": "Cài đặt"
   },
   "home": {
-    "learnNew": "Học từ mới hôm nay",
+    "learnNew": "Học từ mới",
     "learnNewCount": "{n} từ mới đang chờ",
     "limitReached": "Hôm nay bạn đã học đủ từ mới. Hẹn gặp lại ngày mai!",
     "nothingNew": "Chưa có từ mới để học.",
@@ -29,7 +34,16 @@
     "reviewDue": "{n} từ cần ôn",
     "nothingDue": "Hôm nay không có từ cần ôn",
     "themes": "Chủ đề",
-    "themeProgress": "{done} / {total}"
+    "themeProgress": "{done} / {total}",
+    "goalTitle": "Mục tiêu hôm nay",
+    "goalProgress": "{done} / {total} từ mới",
+    "goalDone": "Bạn đã đạt mục tiêu hôm nay. Giỏi lắm!",
+    "streak": "{n} ngày liên tiếp",
+    "chooseTheme": "Chọn chủ đề muốn học",
+    "themeNew": "{n} từ mới",
+    "themeDone": "Hoàn thành",
+    "themeTomorrow": "Hẹn ngày mai",
+    "themeReviewFirst": "Hãy ôn các từ đã học trước"
   },
   "learn": {
     "title": "Học từ mới",
@@ -39,7 +53,12 @@
     "example": "Ví dụ",
     "next": "Tiếp theo",
     "done": "Bạn đã học xong các từ mới hôm nay!",
-    "backHome": "Về trang chủ"
+    "backHome": "Về trang chủ",
+    "phraseBadge": "Cụm từ",
+    "themeEmpty": "Chưa có từ mới trong chủ đề này.",
+    "limitReached": "Hôm nay bạn đã học đủ từ mới. Hẹn gặp lại ngày mai!",
+    "doneTheme": "Bạn đã học xong các từ mới của chủ đề này!",
+    "anotherTheme": "Chọn chủ đề khác"
   },
   "review": {
     "title": "Ôn tập",
@@ -77,7 +96,12 @@
     "reset": "Xóa toàn bộ tiến độ",
     "resetConfirm": "Bạn chắc chắn muốn xóa toàn bộ tiến độ? Không thể hoàn tác.",
     "install": "Cách thêm vào màn hình chính",
-    "version": "Phiên bản {version}"
+    "version": "Phiên bản {version}",
+    "appearance": "Giao diện",
+    "appearanceLight": "Sáng",
+    "appearanceDark": "Tối",
+    "appearanceMint": "Xanh bạc hà",
+    "learning": "Học tập"
   },
   "warnings": {
     "recovered": "Dữ liệu cũ bị lỗi nên ứng dụng đã bắt đầu lại từ đầu. Hãy nhập tệp sao lưu nếu bạn có.",

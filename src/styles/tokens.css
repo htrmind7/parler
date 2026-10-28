@@ -1,19 +1,104 @@
+/* Dark is the base palette; light and mint override it through html[data-appearance] */
 :root {
   --bg: #0f1419;
-  --card: #1e293b;
-  --surface: #2d3748;
-  --track: #374151;
-  --border: #334155;
+  --card: #1a2332;
+  --surface: #263244;
+  --track: #334155;
+  --border: #2b3a4f;
   --text: #f1f5f9;
   --text-muted: #94a3b8;
+
+  /* Fills and borders */
   --coral: #ff6b6b;
   --teal: #4ecdc4;
   --gold: #ffd93d;
   --blue: #60a5fa;
   --purple: #a78bfa;
   --green: #22c55e;
-  --card-flipped: #1a3a2a;
+
+  /* Readable accent colors for text on --bg and --card */
+  --coral-ink: #ff8585;
+  --teal-ink: #4ecdc4;
+  --gold-ink: #ffd93d;
+  --blue-ink: #7db6fb;
+  --green-ink: #4ade80;
+
+  --on-accent: #0f1419;
+  --card-flipped: #16342a;
   --pink-soft: #fca5a5;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.25);
+  --glow-a: rgba(255, 107, 107, 0.16);
+  --glow-b: rgba(78, 205, 196, 0.16);
+
   --font-fr: 'Poppins', system-ui, sans-serif;
   --font-vi: 'Be Vietnam Pro', system-ui, sans-serif;
+  --radius: 22px;
+  --radius-sm: 14px;
+  color-scheme: dark;
+}
+
+html[data-appearance='light'] {
+  --bg: #f3f5f8;
+  --card: #ffffff;
+  --surface: #eef1f6;
+  --track: #e2e8f0;
+  --border: #e3e8ef;
+  --text: #0f172a;
+  --text-muted: #64748b;
+
+  --coral: #ef5350;
+  --teal: #14b8a6;
+  --gold: #f5b700;
+  --blue: #3b82f6;
+  --purple: #8b5cf6;
+  --green: #16a34a;
+
+  --coral-ink: #d93a3f;
+  --teal-ink: #0f766e;
+  --gold-ink: #92600a;
+  --blue-ink: #1d4ed8;
+  --green-ink: #15803d;
+
+  --on-accent: #ffffff;
+  --card-flipped: #e8f7ee;
+  --pink-soft: #be4458;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  --shadow-soft: 0 3px 12px rgba(15, 23, 42, 0.07);
+  --glow-a: rgba(239, 83, 80, 0.1);
+  --glow-b: rgba(20, 184, 166, 0.12);
+  color-scheme: light;
+}
+
+/* Mint green, the pastel green of a retro Smeg fridge */
+html[data-appearance='mint'] {
+  --bg: #bfe3d0;
+  --card: #e4f4ea;
+  --surface: #d2ebdd;
+  --track: #a9d2bd;
+  --border: #a2cdb8;
+  --text: #12352a;
+  --text-muted: #3d6455;
+
+  --coral: #e5484d;
+  --teal: #0f9d8f;
+  --gold: #e0a100;
+  --blue: #2f6fdc;
+  --purple: #7c5cdb;
+  --green: #1a9a52;
+
+  --coral-ink: #c8323a;
+  --teal-ink: #0b6b60;
+  --gold-ink: #7d5200;
+  --blue-ink: #1d4ed8;
+  --green-ink: #0f6b3a;
+
+  --on-accent: #ffffff;
+  --card-flipped: #d3efdc;
+  --pink-soft: #b23a52;
+  --shadow: 0 10px 28px rgba(18, 53, 42, 0.16);
+  --shadow-soft: 0 3px 12px rgba(18, 53, 42, 0.1);
+  --glow-a: rgba(229, 72, 77, 0.1);
+  --glow-b: rgba(255, 255, 255, 0.35);
+  color-scheme: light;
 }

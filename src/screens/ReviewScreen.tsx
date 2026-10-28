@@ -13,7 +13,7 @@ import vi from '../i18n/vi.json'
 import { Button } from '../ui/Button.tsx'
 import { CardDetails } from '../ui/CardTexts.tsx'
 import { FlipCard } from '../ui/FlipCard.tsx'
-import { SpeakerIcon } from '../ui/Icons.tsx'
+import { CheckIcon, CrossIcon, SpeakerIcon } from '../ui/Icons.tsx'
 import { ProgressBar } from '../ui/ProgressBar.tsx'
 
 export function ReviewScreen({
@@ -44,9 +44,12 @@ export function ReviewScreen({
   if (!card || !progress) {
     return (
       <div className="screen centered">
+        <span className="celebrate">
+          <CheckIcon size={40} />
+        </span>
         <p className="vi-main">{vi.review.done}</p>
         <Button
-          variant="outline"
+          variant="soft"
           onClick={() => {
             const next = begin()
             setSession(next)
@@ -123,12 +126,18 @@ export function ReviewScreen({
       <div className="answer-row">
         <Button
           variant="dontKnow"
+          icon={<CrossIcon size={20} />}
           disabled={!flipped}
           onClick={() => answer(false)}
         >
           {vi.review.didntKnow}
         </Button>
-        <Button variant="know" disabled={!flipped} onClick={() => answer(true)}>
+        <Button
+          variant="know"
+          icon={<CheckIcon size={20} />}
+          disabled={!flipped}
+          onClick={() => answer(true)}
+        >
           {vi.review.knew}
         </Button>
       </div>

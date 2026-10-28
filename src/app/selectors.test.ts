@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { Card, Theme } from '../content/schemas.ts'
 import { createInitialState, introduceCard } from '../engine/engine.ts'
 import {
+  currentStreak,
   lastWeek,
   restrictToCards,
   seenCards,
@@ -61,5 +62,24 @@ describe('selectors', () => {
   it('gives Monday as 0 and Sunday as 6', () => {
     expect(weekdayIndex('2026-11-02')).toBe(0)
     expect(weekdayIndex('2026-11-01')).toBe(6)
+  })
+})
+
+describe('currentStreak', () => {
+  it('counts consecutive days ending today', () => {
+    expect(currentStreak(['2026-10-30', '2026-10-31', TODAY], TODAY)).toBe(3)
+  })
+
+  it('keeps the streak alive when today is not recorded yet', () => {
+    expect(currentStreak(['2026-10-30', '2026-10-31'], TODAY)).toBe(2)
+  })
+
+  it('stops at the first missing day', () => {
+    expect(currentStreak(['2026-10-28', '2026-10-31', TODAY], TODAY)).toBe(2)
+  })
+
+  it('is 0 without recent activity', () => {
+    expect(currentStreak([], TODAY)).toBe(0)
+    expect(currentStreak(['2026-10-20'], TODAY)).toBe(0)
   })
 })

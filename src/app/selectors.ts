@@ -63,3 +63,15 @@ export function weekdayIndex(isoDate: string): number {
   const [year, month, day] = isoDate.split('-').map(Number)
   return (new Date(Date.UTC(year, month - 1, day)).getUTCDay() + 6) % 7
 }
+
+/** Consecutive days of activity ending today (or yesterday, if today is not recorded yet). */
+export function currentStreak(activity: string[], today: string): number {
+  const days = new Set(activity)
+  let day = days.has(today) ? today : addDays(today, -1)
+  let streak = 0
+  while (days.has(day)) {
+    streak += 1
+    day = addDays(day, -1)
+  }
+  return streak
+}

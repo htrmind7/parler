@@ -231,6 +231,12 @@ describe('nextNewCards', () => {
     expect(nextNewCards(state, themes, many, TODAY)).toHaveLength(5)
   })
 
+  it('can be restricted to one theme', () => {
+    const state = createInitialState(TODAY, 15)
+    const ids = nextNewCards(state, themes, cards, TODAY, 'b').map((c) => c.id)
+    expect(ids).toEqual(['b1'])
+  })
+
   it('offers a phrase once its words are in box 2', () => {
     const state = withBox(createInitialState(TODAY, 15), 'a1', 2)
     const ids = nextNewCards(state, themes, cards, TODAY).map((c) => c.id)

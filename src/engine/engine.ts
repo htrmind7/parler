@@ -123,16 +123,22 @@ export function isUnlocked(card: Card, state: AppState): boolean {
   )
 }
 
-/** Next cards to learn today, in theme then card order, within the daily limit. */
+/** Next cards to learn today (optionally within one theme), in theme then card order, within the daily limit. */
 export function nextNewCards(
   state: AppState,
   themes: Theme[],
   cards: Card[],
   today: string,
+  themeId?: string,
 ): Card[] {
   const themeOrder = new Map(themes.map((theme) => [theme.id, theme.order]))
   return cards
-    .filter((card) => !state.progress[card.id] && isUnlocked(card, state))
+    .filter(
+      (card) =>
+        (themeId === undefined || card.themeId === themeId) &&
+        !state.progress[card.id] &&
+        isUnlocked(card, state),
+    )
     .sort(
       (a, b) =>
         (themeOrder.get(a.themeId) ?? 0) - (themeOrder.get(b.themeId) ?? 0) ||

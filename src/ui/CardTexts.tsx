@@ -5,10 +5,16 @@ import { Button } from './Button.tsx'
 import { SpeakerIcon } from './Icons.tsx'
 
 /** Everything about a card, shown at once while learning and on the back in review. */
-export function CardDetails({ card }: { card: Card }) {
+export function CardDetails({
+  card,
+  showTranslation = true,
+}: {
+  card: Card
+  showTranslation?: boolean
+}) {
   return (
     <div className="details">
-      <p className="vi-main">{card.vi}</p>
+      {showTranslation && <p className="translation">{card.vi}</p>}
       <div className="tip">
         <span className="label">{vi.learn.tip}</span>
         <p>{card.tipVi}</p>

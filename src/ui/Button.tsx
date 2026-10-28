@@ -1,7 +1,8 @@
 type ButtonProps = {
   children: React.ReactNode
   onClick: () => void
-  variant?: 'primary' | 'outline' | 'listen' | 'know' | 'dontKnow' | 'ghost'
+  variant?:
+    'primary' | 'soft' | 'outline' | 'listen' | 'know' | 'dontKnow' | 'ghost'
   disabled?: boolean
   icon?: React.ReactNode
   className?: string
