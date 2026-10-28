@@ -34,10 +34,10 @@ function boot(today: string): Boot {
   const result = loadState(store, today)
   // A returning learner opening the app counts as an active day; a first launch
   // is recorded only once the welcome screen is completed.
-  const state =
-    result.status === 'ok'
-      ? recordActivity(rollDay(result.state, today), today)
-      : result.state
+  const returning = result.status === 'ok' && result.state.activity.length > 0
+  const state = returning
+    ? recordActivity(rollDay(result.state, today), today)
+    : result.state
   return { store, persistent: browserStore !== null, result, state }
 }
 
