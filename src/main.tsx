@@ -10,9 +10,12 @@ import '@fontsource/be-vietnam-pro/vietnamese-700.css'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
+import { primeVoices } from './audio/speech.ts'
 import './styles/tokens.css'
 import './styles/global.css'
 import './styles/app.css'
+
+primeVoices()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

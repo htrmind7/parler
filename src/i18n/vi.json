@@ -83,6 +83,8 @@
     "recovered": "Dữ liệu cũ bị lỗi nên ứng dụng đã bắt đầu lại từ đầu. Hãy nhập tệp sao lưu nếu bạn có.",
     "noStorage": "Trình duyệt không cho lưu dữ liệu. Tiến độ sẽ mất khi bạn đóng ứng dụng.",
     "saveFailed": "Không lưu được tiến độ. Hãy thử xuất tiến độ để sao lưu.",
-    "noSpeech": "Điện thoại này không hỗ trợ đọc tiếng Pháp thành tiếng."
+    "noSpeech": "Điện thoại này không hỗ trợ đọc tiếng Pháp thành tiếng.",
+    "noFrenchVoice": "Thiết bị này chưa có giọng đọc tiếng Pháp. Hãy cài giọng tiếng Pháp trong phần cài đặt của thiết bị.",
+    "speechFailed": "Không phát được âm thanh. Hãy kiểm tra âm lượng và chế độ im lặng của thiết bị."
   }
 }

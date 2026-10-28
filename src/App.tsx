@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import rawCards from '../content/cards.json'
 import rawThemes from '../content/themes.json'
 import { useAppState } from './app/useAppState.ts'
@@ -6,7 +6,11 @@ import type { ScreenName, ScreenProps } from './app/types.ts'
 import { loadPublishedContent } from './content/loader.ts'
 import { recordActivity } from './engine/engine.ts'
 import { toIsoDate } from './engine/dates.ts'
-import { isSpeechSupported } from './audio/speech.ts'
+import {
+  isSpeechSupported,
+  onSpeechProblem,
+  type SpeechProblem,
+} from './audio/speech.ts'
 import vi from './i18n/vi.json'
 import { HomeScreen } from './screens/HomeScreen.tsx'
 import { InstallScreen } from './screens/InstallScreen.tsx'
@@ -32,6 +36,9 @@ export default function App() {
     useAppState(today)
   const [screen, setScreen] = useState<ScreenName>('home')
   const [showInstall, setShowInstall] = useState(false)
+  const [speechProblem, setSpeechProblem] = useState<SpeechProblem | null>(null)
+
+  useEffect(() => onSpeechProblem(setSpeechProblem), [])
 
   const isFirstLaunch = state.activity.length === 0
   const props: ScreenProps = { content, state, update, today, go: setScreen }
@@ -73,6 +80,8 @@ export default function App() {
     !persistent && vi.warnings.noStorage,
     saveFailed && vi.warnings.saveFailed,
     !isSpeechSupported() && vi.warnings.noSpeech,
+    speechProblem === 'no-french-voice' && vi.warnings.noFrenchVoice,
+    speechProblem === 'failed' && vi.warnings.speechFailed,
   ].filter((text): text is string => typeof text === 'string')
 
   return (

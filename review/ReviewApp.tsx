@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { speakFrench } from '../src/audio/speech.ts'
+import { onSpeechProblem, speakFrench } from '../src/audio/speech.ts'
 import {
   draftsToReview,
   rejectCard,
@@ -143,6 +143,18 @@ export function ReviewApp() {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const [skipped, setSkipped] = useState<string[]>([])
+
+  useEffect(
+    () =>
+      onSpeechProblem((problem) =>
+        setError(
+          problem
+            ? `Speech problem: ${problem} (check the browser French voices)`
+            : null,
+        ),
+      ),
+    [],
+  )
 
   useEffect(() => {
     fetch('/api/content')
