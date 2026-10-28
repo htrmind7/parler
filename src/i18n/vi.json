@@ -58,7 +58,8 @@
     "themeEmpty": "Chưa có từ mới trong chủ đề này.",
     "limitReached": "Hôm nay bạn đã học đủ từ mới. Hẹn gặp lại ngày mai!",
     "doneTheme": "Bạn đã học xong các từ mới của chủ đề này!",
-    "anotherTheme": "Chọn chủ đề khác"
+    "anotherTheme": "Chọn chủ đề khác",
+    "previous": "Quay lại"
   },
   "review": {
     "title": "Ôn tập",

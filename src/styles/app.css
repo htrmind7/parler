@@ -283,9 +283,14 @@
   gap: 10px;
 }
 
-.answer-row {
+.answer-row,
+.nav-row {
   display: flex;
   gap: 12px;
+}
+
+.nav-row .btn-primary {
+  flex: 1;
 }
 
 .answer-row .btn {

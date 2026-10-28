@@ -10,7 +10,7 @@ import {
 import vi from '../i18n/vi.json'
 import { Button } from '../ui/Button.tsx'
 import { CardDetails } from '../ui/CardTexts.tsx'
-import { CheckIcon, SpeakerIcon } from '../ui/Icons.tsx'
+import { ArrowLeftIcon, CheckIcon, SpeakerIcon } from '../ui/Icons.tsx'
 import { ProgressBar } from '../ui/ProgressBar.tsx'
 import { THEME_TONES, ThemeIcon } from '../ui/ThemeIcon.tsx'
 
@@ -52,6 +52,15 @@ export function LearnScreen({
         <Button onClick={() => go('home')}>
           {learnThemeId ? vi.learn.anotherTheme : vi.learn.backHome}
         </Button>
+        {index > 0 && (
+          <Button
+            variant="ghost"
+            icon={<ArrowLeftIcon size={20} />}
+            onClick={() => setIndex(index - 1)}
+          >
+            {vi.learn.previous}
+          </Button>
+        )}
       </div>
     )
   }
@@ -59,7 +68,10 @@ export function LearnScreen({
   const theme = content.themes.find((item) => item.id === card.themeId)
 
   function next() {
-    update((current) => introduceCard(current, card.id, today))
+    // A card seen again after going back is already part of the review system
+    if (!state.progress[card.id]) {
+      update((current) => introduceCard(current, card.id, today))
+    }
     setIndex(index + 1)
   }
 
@@ -97,9 +109,20 @@ export function LearnScreen({
         </button>
       </div>
       <CardDetails card={card} showTranslation={false} />
-      <Button variant="primary" onClick={next}>
-        {vi.learn.next}
-      </Button>
+      <div className="nav-row">
+        {index > 0 && (
+          <Button
+            variant="outline"
+            icon={<ArrowLeftIcon size={20} />}
+            onClick={() => setIndex(index - 1)}
+          >
+            {vi.learn.previous}
+          </Button>
+        )}
+        <Button variant="primary" onClick={next}>
+          {vi.learn.next}
+        </Button>
+      </div>
     </div>
   )
 }

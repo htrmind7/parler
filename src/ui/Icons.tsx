@@ -107,3 +107,9 @@ export const LockIcon = (props: IconProps) => (
     <path d="M8 11V8a4 4 0 0 1 8 0v3" />
   </Svg>
 )
+
+export const ArrowLeftIcon = (props: IconProps) => (
+  <Svg {...props}>
+    <path d="M19 12H5M11 6l-6 6 6 6" />
+  </Svg>
+)
