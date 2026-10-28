@@ -1,0 +1,19 @@
+:root {
+  --bg: #0f1419;
+  --card: #1e293b;
+  --surface: #2d3748;
+  --track: #374151;
+  --border: #334155;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --coral: #ff6b6b;
+  --teal: #4ecdc4;
+  --gold: #ffd93d;
+  --blue: #60a5fa;
+  --purple: #a78bfa;
+  --green: #22c55e;
+  --card-flipped: #1a3a2a;
+  --pink-soft: #fca5a5;
+  --font-fr: 'Poppins', system-ui, sans-serif;
+  --font-vi: 'Be Vietnam Pro', system-ui, sans-serif;
+}
