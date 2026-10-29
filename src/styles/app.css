@@ -1135,3 +1135,14 @@
   color: var(--green-ink);
   font-weight: 700;
 }
+
+.voice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.voice-option {
+  width: 100%;
+  text-align: left;
+}

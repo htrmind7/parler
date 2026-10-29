@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { pickFrenchVoice } from './speech.ts'
+import { pickFrenchVoice, rankFrenchVoices } from './speech.ts'
 
 const voice = (name: string, lang: string) =>
   ({ name, lang }) as SpeechSynthesisVoice
@@ -24,5 +24,24 @@ describe('pickFrenchVoice', () => {
 
   it('returns undefined without a French voice', () => {
     expect(pickFrenchVoice([voice('en', 'en-US')])).toBeUndefined()
+  })
+
+  it('ranks a female enhanced voice above a male one', () => {
+    const voices = [
+      voice('Thomas', 'fr-FR'),
+      voice('Amélie', 'fr-CA'),
+      voice('Audrey (Enhanced)', 'fr-FR'),
+    ]
+    expect(rankFrenchVoices(voices).map((v) => v.name)).toEqual([
+      'Audrey (Enhanced)',
+      'Thomas',
+      'Amélie',
+    ])
+  })
+
+  it('honors the preferred voice when installed, else the best one', () => {
+    const voices = [voice('Thomas', 'fr-FR'), voice('Audrey', 'fr-FR')]
+    expect(pickFrenchVoice(voices, 'Thomas')?.name).toBe('Thomas')
+    expect(pickFrenchVoice(voices, 'Gone')?.name).toBe('Audrey')
   })
 })

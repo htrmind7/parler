@@ -1,7 +1,14 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { lastWeek, weekdayIndex } from '../app/selectors.ts'
 import type { ScreenProps } from '../app/types.ts'
 import { APPEARANCES, type Appearance } from '../app/appearance.ts'
+import {
+  getFrenchVoices,
+  isSpeechSupported,
+  loadVoiceName,
+  saveVoiceName,
+  speakFrench,
+} from '../audio/speech.ts'
 import { createInitialState } from '../engine/engine.ts'
 import type { NewPerDay } from '../engine/types.ts'
 import { format } from '../i18n/format.ts'
@@ -21,6 +28,50 @@ function download(fileName: string, text: string): void {
   link.download = fileName
   link.click()
   URL.revokeObjectURL(url)
+}
+
+function VoicePicker() {
+  const [voices, setVoices] = useState(getFrenchVoices)
+  const [chosen, setChosen] = useState(loadVoiceName)
+
+  // Voices load lazily in most browsers
+  useEffect(() => {
+    const refresh = () => setVoices(getFrenchVoices())
+    window.speechSynthesis.addEventListener('voiceschanged', refresh)
+    return () =>
+      window.speechSynthesis.removeEventListener('voiceschanged', refresh)
+  }, [])
+
+  function choose(name: string | null) {
+    saveVoiceName(name)
+    setChosen(name)
+    // Synchronous on purpose: speech must start from the tap
+    speakFrench('Bonjour, je m\u2019appelle Marie.')
+  }
+
+  return (
+    <>
+      <h2 className="section-title">{vi.settings.voice}</h2>
+      {voices.length === 0 ? (
+        <p className="hint">{vi.settings.voiceNone}</p>
+      ) : (
+        <div className="voice-list">
+          {[null, ...voices.map((voice) => voice.name)].map((name) => (
+            <button
+              key={name ?? 'auto'}
+              type="button"
+              className={`pill voice-option ${chosen === name ? 'pill-active' : ''}`}
+              aria-pressed={chosen === name}
+              onClick={() => choose(name)}
+            >
+              {name ?? vi.settings.voiceAuto}
+            </button>
+          ))}
+        </div>
+      )}
+      <p className="hint">{vi.settings.voiceHint}</p>
+    </>
+  )
 }
 
 type SettingsProps = ScreenProps & {
@@ -93,6 +144,8 @@ export function SettingsScreen({
           </button>
         ))}
       </div>
+
+      {isSpeechSupported() && <VoicePicker />}
 
       <h2 className="section-title">{vi.settings.newPerDay}</h2>
       <div className="pills">

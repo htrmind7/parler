@@ -113,7 +113,12 @@
     "appearanceLight": "Sáng",
     "appearanceDark": "Tối",
     "appearanceMint": "Xanh bạc hà",
-    "learning": "Học tập"
+    "learning": "Học tập",
+    "voice": "Giọng đọc tiếng Pháp",
+    "voiceAuto": "Tự động (khuyên dùng)",
+    "voiceHint": "Nếu giọng nghe lạ, hãy chọn giọng khác. Trên iPhone, bạn có thể tải thêm giọng tại Cài đặt → Trợ năng → Nội dung được đọc → Giọng nói → Tiếng Pháp.",
+    "voiceNone": "Thiết bị này chưa có giọng tiếng Pháp.",
+    "voiceTest": "Nghe thử"
   },
   "warnings": {
     "recovered": "Dữ liệu cũ bị lỗi nên ứng dụng đã bắt đầu lại từ đầu. Hãy nhập tệp sao lưu nếu bạn có.",
